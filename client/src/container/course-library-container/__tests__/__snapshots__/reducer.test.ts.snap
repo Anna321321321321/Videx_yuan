@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`User reducer unit test DEINIT 1`] = `
+Immutable.Map {
+  "courses": Immutable.List [],
+  "metadata": Immutable.Map {
+    "adminAccess": false,
+  },
+  "initialized": false,
+}
+`;
+
+exports[`User reducer unit test INIT 1`] = `
+Immutable.Map {
+  "courses": Immutable.List [
+    Immutable.Map {
+      "name": "test1",
+      "metadata": Immutable.Map {
+        "contributorAccess": true,
+        "ownerAccess": true,
+      },
+      "id": "1",
+    },
+  ],
+  "metadata": Immutable.Map {
+    "adminAccess": true,
+  },
+  "initialized": true,
+}
+`;

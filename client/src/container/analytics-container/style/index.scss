@@ -1,0 +1,19 @@
+@import '../../../style/index';
+
+.#{$videx-prefix}-tooltip-thumbnail {
+  z-index: 0;
+  will-change: transform;
+  -webkit-transition: width 0.5s; /* For Safari 3.1 to 6.0 */
+  transition: width 0.5s;
+  overflow: hidden;
+  height: 100%;
+  // width: 50%;
+}
+
+.#{$videx-prefix}-thumbnail-column-transcript {
+  width: 50%;
+  -webkit-transition: width 0.5s; /* For Safari 3.1 to 6.0 */
+  transition: width 0.5s;
+  overflow: hidden;
+  height: 50%;
+}

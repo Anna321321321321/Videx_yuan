@@ -1,0 +1,18 @@
+@import '../../../style/index';
+
+.#{$videx-prefix}-active-video-header-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  .#{$videx-prefix}-active-video-header-logo-img {
+    height: 31px;
+    line-height: 31px;
+    margin-right: 8px;
+  }
+
+  .#{$videx-prefix}-active-video-header-logo-span {
+    font-size: 16px;
+    font-family: 'Raleway', 'Hiragino Sans GB', sans-serif;
+  }
+}

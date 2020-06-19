@@ -1,0 +1,35 @@
+FROM node:8.17.0
+
+# File Author / Maintainer
+MAINTAINER UBC / Microsoft
+
+ENV NPM_CONFIG_LOGLEVEL warn
+
+# Provides cached layer for node_modules
+RUN mkdir -p /app
+
+WORKDIR /app
+
+# Copy package.json to container
+ADD ./package.json /app/package.json
+ADD ./yarn.lock /app/yarn.lock
+
+# Install all the thing
+RUN yarn install
+
+# Copy files to container
+ADD ./.prettierrc.json /app/.prettierrc.json
+ADD ./config /app/config
+ADD ./server /app/server
+ADD ./client /app/client
+ADD ./demo /app/demo
+ADD ./videx /app/videx
+ADD ./jest.server.config.json /app/jest.server.config.json
+ADD ./jest.client.config.json /app/jest.client.config.json
+ADD ./webpack.jenkins.config.js /app/webpack.jenkins.config.js
+ADD ./webpack.jenkins.demo.config.js /app/webpack.jenkins.demo.config.js
+ADD ./build-all.sh /app/build-all.sh
+
+# Run script to generate production build
+RUN chmod o+x /app/build-all.sh
+CMD ./build-all.sh

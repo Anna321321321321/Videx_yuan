@@ -1,0 +1,82 @@
+version: '3.4'
+
+services:
+  node:
+      build:
+        context: .
+        dockerfile: Dockerfile/DockerfileNodeDevelop
+      env_file:
+        - variables.env
+      ports:
+        - "3000:3000"
+        - "8080:8080"
+        - "8081:8081"
+        - "8082:8082"
+        - "9229:9229"
+      links:
+        - mongodb
+        - redis
+        - jsreport
+      volumes:
+        - node_modules:/app/node_modules
+        - ./client:/app/client
+        - ./server:/app/server
+        - ./demo:/app/demo
+        - ./config:/app/config
+        - ./yarn.lock:/app/yarn.lock
+        - ./ssl-cert.pem:/app/ssl-cert.pem
+        - ./ssl-key.pem:/app/ssl-key.pem
+        - ./webpack.local.config.js:/app/webpack.local.config.js
+        - ./webpack.local.demo.config.js:/app/webpack.local.demo.config.js
+        - ./package.json:/app/package.json
+        - ./videx:/app/videx
+        # for test
+        - ./build-all.sh:/app/build-all.sh
+        - ./test.sh:/app/test.sh
+        - ./.prettierrc.json:/app/.prettierrc.json
+        - ./jest.server.config.json:/app/jest.server.config.json
+        - ./jest.client.config.json:/app/jest.client.config.json 
+        - ./webpack.jenkins.config.js:/app/webpack.jenkins.config.js
+      container_name: videx-dev-node
+      command: yarn run dev
+
+  mongodb:
+      image: mongo:3.6.3
+      ports:
+        - "27017:27017"
+      container_name: videx-dev-mongodb
+      volumes:
+        - mongodb:/data/db
+      logging:
+        driver: "none"
+
+  redis:
+      image: redis:4.0.6-alpine
+      ports:
+        - "6379:6379"
+      container_name: videx-dev-redis
+      volumes:
+        - redis:/data
+      command: redis-server --bind 0.0.0.0 --appendonly yes
+      logging:
+        driver: "none"
+  
+  jsreport:
+      image: jsreport/jsreport:2.0.0
+      ports:
+        - "5488:5488"
+      volumes:
+        - ./jsreport:/jsreport
+      container_name: videx-dev-jsreport
+      logging:
+        driver: "none"
+
+volumes:
+  node_modules:
+    driver: local
+
+  mongodb:
+    driver: local
+
+  redis:
+    driver: local

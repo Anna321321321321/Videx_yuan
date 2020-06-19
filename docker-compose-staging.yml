@@ -1,0 +1,51 @@
+version: '3.4'
+
+services:
+  node:
+      build:
+        context: .
+        dockerfile: Dockerfile/DockerfileNodeStagingProduction
+      volumes:
+        - /var/www/videx:/app/cert/certbot
+        - /etc/letsencrypt/archive:/app/cert/ssl/archive
+        - /etc/letsencrypt/live:/app/cert/ssl/live
+      ports:
+        - "80:8080"
+        - "443:8081"
+      links:
+        - mongodb
+        - redis
+        - jsreport
+      container_name: videx-staging-node
+      command: yarn run server
+      env_file:
+        - variables.env
+
+  mongodb:
+      image: mongo:3.6.3
+      env_file:
+        - variables.env
+      volumes:
+        - /datadisk/mongodb:/data/db
+      ports:
+        - "27017:27017"
+      container_name: videx-staging-mongodb
+
+  redis:
+      build:
+        context: .
+        dockerfile: ./Dockerfile/DockerfileRedis
+      env_file:
+        - variables.env
+      volumes:
+        - /datadisk/redis:/data
+      ports:
+        - "6379:6379"
+      container_name: videx-staging-redis
+
+  jsreport:
+      build:
+        context: .
+        dockerfile: ./Dockerfile/DockerfileJsreport
+      container_name: videx-staging-jsreport
+

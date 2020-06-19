@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "module": "es6",
+    "target": "es6",
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": false,
+    "sourceMap": true,
+    "outDir": "build/",
+    "jsx": "preserve",
+    "allowJs": true,
+    "experimentalDecorators": true,
+    "preserveConstEnums": true,
+    "typeRoots": ["../node_modules/@types"],
+    "paths": {
+      "videx/api": ["../videx/api"],
+      "videx/client/logger": ["./src/system/logger"],
+      "videx/client/core/color": ["./src/core/color"],
+      "videx/client/core/transcript": ["./src/core/transcript"],
+      "videx/client/core/version": ["./src/core/version"]
+    }
+  },
+  "exclude": ["node_modules"]
+}

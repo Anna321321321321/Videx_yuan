@@ -1,0 +1,109 @@
+@import '../../../style/index';
+
+.#{$videx-prefix}-video-player-container {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+}
+
+.amp-flush-skin {
+  /*
+  .vjs-text-track-display {
+    div {
+      div {
+        position: absolute !important;
+        margin-right: auto !important;
+        margin-left: auto !important;
+        left: 0 !important;
+        right: 0 !important;
+        width: 90% !important;
+        bottom: 60px !important;
+        font-size: 16px !important;
+
+        div {
+          font-size: 16px !important;
+        }
+      }
+    }
+  }
+  */
+
+  .vjs-text-track-display {
+    div {
+      div {
+        margin-bottom: 50px;
+        font-size: 16pt !important;
+
+        div {
+          font-size: 16pt !important;
+        }
+      }
+    }
+  }
+
+  .vjs-progress-control {
+    bottom: 0;
+  }
+
+  .vjs-progress-holder {
+    // prevent on hover effect
+    height: 5px !important;
+    z-index: 11;
+  }
+
+  .vjs-control-bar {
+    position: absolute;
+    right: 0;
+    left: 0;
+    // bottom: 10px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+    .amp-controlbaricons-middle {
+      bottom: -6px;
+      padding-top: 25px !important;
+    }
+
+    .amp-controlbaricons-left {
+      width: 33%;
+    }
+
+    .amp-controlbaricons-right {
+      width: 33%;
+      text-align: right;
+    }
+
+    .amp-controlbaricons-bottom {
+      display: table;
+      width: 100%;
+    }
+
+    .amp-controlbaricons-bottom-middle {
+      display: table-cell;
+      width: 33%;
+      text-align: center;
+    }
+  }
+
+  /* TODO: NEED TO CHANGE THE LOGO COLOR */
+  /*
+  .amp-logo>div,
+  .amp-logo>span {
+    background-image: url("/static/logo.png");
+  }
+  */
+}
+
+.vjs-menu {
+  z-index: 11 !important;
+}
+.vjs-mouse-display {
+  display: none !important;
+}
+
+.hide-text-track {
+  display: none;
+}

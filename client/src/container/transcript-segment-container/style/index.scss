@@ -1,0 +1,35 @@
+@import '../../../style/index';
+.#{$videx-prefix}-thumbnail-splitter {
+  border-right: 1px solid rgba(255, 255, 255, 0.863) !important;
+  border-left: 1px solid rgba(255, 255, 255, 0.863) !important;
+  z-index: 0 !important;
+  &:hover {
+    border-right: 2px solid #ffffffd7 !important;
+    border-left: 2px solid #ffffffd7 !important;
+  }
+}
+
+.#{$videx-prefix}-thumbnail-container {
+  position: relative;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.#{$videx-prefix}-transcript-segment-div {
+  &:hover .#{$videx-prefix}-quick-annotation-tool {
+    visibility: visible;
+  }
+}
+
+.#{$videx-prefix}-quick-annotation-tool {
+  visibility: hidden;
+}
+
+.#{$videx-prefix}-quick-annotation {
+  position: 'relative';
+  margin-top: '25px';
+  padding: 'none';
+}

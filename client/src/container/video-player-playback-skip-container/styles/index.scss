@@ -1,0 +1,25 @@
+@import '../../../style/index';
+
+.#{$videx-prefix}-playback-skip-container-button-group {
+  vertical-align: middle !important;
+  button {
+    background-color: rgba(48, 56, 62, 0.99) !important;
+    background: none !important;
+    border-radius: 0 !important;
+    i {
+      color: white !important;
+      margin: auto !important;
+      text-align: center !important;
+    }
+    div {
+      color: white !important;
+      font-size: 10px;
+      text-align: center;
+      margin: auto !important;
+    }
+    &:hover {
+      background: transparent !important;
+      background-color: rgba(48, 56, 62, 0.99) !important;
+    }
+  }
+}

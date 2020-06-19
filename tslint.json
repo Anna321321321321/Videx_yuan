@@ -1,0 +1,28 @@
+{
+  "defaultSeverity": "error",
+  "extends": ["tslint-react", "tslint-config-prettier"],
+  "rules": {
+    "import-name": false,
+    "prefer-array-literal": {
+      "severity": "warning"
+    },
+    "no-else-after-return": false,
+    "prefer-const": true,
+    "curly": true,
+    "arrow-return-shorthand": true,
+    "ordered-imports": [
+      true,
+      {
+        "import-sources-order": "lowercase-last",
+        "named-imports-order": "lowercase-last"
+      }
+    ],
+    "array-type": [true, "array"],
+    "no-unused-variable": true,
+    "return-undefined": true,
+    "variable-name": [true, "check-format", "allow-trailing-underscore"],
+    "no-unnecessary-initializer": true,
+    "jsx-no-multiline-js": [false],
+    "jsx-no-lambda": [false]
+  }
+}

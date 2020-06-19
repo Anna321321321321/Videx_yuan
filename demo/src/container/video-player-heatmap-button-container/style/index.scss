@@ -1,0 +1,85 @@
+@import '../../../style/index';
+
+.#{$videx-prefix}-heatmap-button {
+  background-color: rgba(48, 56, 62, 0.99) !important;
+  background: none !important;
+  border-radius: 0 !important;
+  height: 37px;
+  width: 20px;
+
+  &:hover {
+    background: transparent !important;
+    background-color: rgba(48, 56, 62, 0.99) !important;
+  }
+
+  i {
+    color: #fff !important;
+    margin: auto !important;
+  }
+}
+
+.heatmap-menu {
+  visibility: hidden;
+  z-index: 99;
+}
+
+.#{$videx-prefix}-play-highlights-plugin-decorator {
+  display: inline-flex;
+  vertical-align: middle !important;
+}
+
+.#{$videx-prefix}-play-highlight-plugin-container {
+  background-color: transparent !important;
+  margin: 0 !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+
+.#{$videx-prefix}-play-highlight-plugin-container i {
+  color: white !important;
+  margin: auto;
+}
+
+.#{$videx-prefix}-play-highlight-plugin-container div {
+  color: white !important;
+  margin: auto;
+  font-size: 10px;
+}
+
+.#{$videx-prefix}-play-highlight-dropdown {
+  position: relative;
+  display: inline-block;
+  z-index: 11;
+}
+
+.#{$videx-prefix}-play-highlight-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(48, 56, 62, 0.99);
+  z-index: 1;
+  bottom: 100%;
+}
+
+.#{$videx-prefix}-play-highlight-color-dropdown-item:hover {
+  cursor: pointer;
+}
+
+.#{$videx-prefix}-play-highlight-color-dropdown-item {
+  text-align: center !important;
+  width: 100% !important;
+}
+
+.#{$videx-prefix}-play-highlight-dropdown-content
+  > div
+  > div:nth-child(1)
+  > div {
+  padding-left: 5px;
+}
+
+.#{$videx-prefix}-play-highlight-dropdown-content > div > div:last-child > div {
+  padding-right: 5px;
+}
+
+.show {
+  display: block;
+}

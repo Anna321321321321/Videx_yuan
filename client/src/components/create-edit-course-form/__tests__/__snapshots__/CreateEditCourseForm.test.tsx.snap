@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Create Edit Course Form Component Unit Tests Render component 1`] = `
+<CreateEditCourseForm
+  category={
+    Object {
+      "value": "default",
+    }
+  }
+  form={
+    Object {
+      "getFieldDecorator": [Function],
+      "getFieldError": [Function],
+      "getFieldInstance": [Function],
+      "getFieldProps": [Function],
+      "getFieldValue": [Function],
+      "getFieldsError": [Function],
+      "getFieldsValue": [Function],
+      "isFieldTouched": [Function],
+      "isFieldValidating": [Function],
+      "isFieldsTouched": [Function],
+      "isFieldsValidating": [Function],
+      "isSubmitting": [Function],
+      "resetFields": [Function],
+      "setFields": [Function],
+      "setFieldsInitialValue": [Function],
+      "setFieldsValue": [Function],
+      "submit": [Function],
+      "validateFields": [Function],
+      "validateFieldsAndScroll": [Function],
+    }
+  }
+  name={
+    Object {
+      "value": "name",
+    }
+  }
+  onChange={[Function]}
+  onSubmit={[Function]}
+  releaseDate={
+    Object {
+      "value": "1970-01-01T16:00:00.000Z",
+    }
+  }
+/>
+`;

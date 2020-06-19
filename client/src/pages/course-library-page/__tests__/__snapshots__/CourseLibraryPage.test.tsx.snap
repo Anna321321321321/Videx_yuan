@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CourseLibraryPage Unit Tests Shallow Render 1`] = `
+<Adapter
+  style={
+    Object {
+      "minHeight": "100vh",
+    }
+  }
+>
+  <Component />
+  <Connect(CourseLibraryContainer) />
+  <Component />
+</Adapter>
+`;

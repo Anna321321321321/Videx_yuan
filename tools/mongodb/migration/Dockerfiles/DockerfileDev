@@ -1,0 +1,12 @@
+FROM node:10.6.0-alpine
+
+# File Author / Maintainer
+MAINTAINER UBC / Microsoft
+
+ENV NPM_CONFIG_LOGLEVEL warn
+
+# Provides cached layer for node_modules
+RUN mkdir -p /app
+
+# Define working directory
+WORKDIR /app

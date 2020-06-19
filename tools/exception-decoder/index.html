@@ -1,0 +1,29 @@
+<script src="stacktrace.min.js"></script>
+<script src="error-stack-parser.min.js"></script>
+<script src="stacktrace-gps.min.js"></script>
+<script>
+    var productionStackTrace = ``
+
+    productionStackTrace = productionStackTrace.replace(/https:\/\/videx.ece.ubc.ca\/dist\//g, "")
+    var stackFrames = ErrorStackParser.parse({stack: productionStackTrace})
+    var gps = new StackTraceGPS();
+    var newFrames = new Array(stackFrames.length)
+    var frameResolved = 0;
+    stackFrames.forEach(function(stackFrame, i){
+        gps.pinpoint(stackFrame).then(function(newFrame){
+            newFrames[i] = newFrame
+            frameResolved++;
+            if (frameResolved === stackFrames.length){
+                allFramesResolved()
+            }
+        }, function(){
+            console.error(arguments)
+        })
+    })
+    function allFramesResolved(){
+        var newFrameStrings = newFrames.map(function(frame){
+            return frame.toString();
+        })
+        console.log(newFrameStrings.join("\n"))
+    }
+</script>

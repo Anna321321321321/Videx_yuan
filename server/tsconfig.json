@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "module": "commonjs",
+    "target": "es6",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "outDir": "../dist",
+    "noImplicitAny": false,
+    "sourceMap": true,
+    "lib": ["dom", "es2017"],
+    "paths": {
+      "videx/api": ["../videx/api"],
+      "videx/server/core/circuit-breaker": ["src/core/circuit-breaker"],
+      "videx/server/entities": ["src/entities"],
+      "videx/server/cloud/message-manager": ["src/cloud/message-manager"],
+      "videx/server/cloud/lesson-manager": ["src/cloud/lesson-manager"],
+      "videx/server/cloud/media-assets-manager": [
+        "src/cloud/media-assets-manager"
+      ],
+      "videx/server/cloud/blob-storage": ["src/cloud/blob-storage"],
+      "videx/server/cloud/image-processor": ["src/cloud/image-processor"],
+      "videx/server/cloud/cloud-service": ["src/cloud/cloud-service"],
+      "videx/server/cloud/queue-storage": ["src/cloud/queue-storage"],
+      "videx/server/cloud/media-service": ["src/cloud/media-service"],
+      "videx/server/cloud/notification-endpoint": [
+        "src/cloud/notification-endpoint"
+      ],
+      "videx/server/cloud/job-monitor": ["src/cloud/job-monitor"],
+      "videx/server/mongodb": ["src/mongodb"],
+      "videx/server/core/error": ["src/core/error"],
+      "videx/server/redis": ["src/redis"],
+      "videx/server/log": ["src/log"],
+      "videx/server/exports": ["src/exports"],
+      "videx/server/utilities": ["src/utilities"]
+    }
+  },
+  "exclude": ["node_modules", "src/next"]
+}

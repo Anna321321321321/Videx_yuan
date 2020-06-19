@@ -1,0 +1,21 @@
+{
+  "DATABASE": {
+    "MONGODB": {
+      "HOST": "mongodb"
+    },
+    "REDIS": {
+      "HOST": "redis"
+    }
+  },
+  "SERVER": {
+    "URL": "https://localhost:8081"
+  },
+  "MICROSOFT_GRAPH_AZURE_AD": {
+    "OAUTH_AUTHORIZE_URL":
+      "https://login.microsoftonline.com/common/oauth2/v2.0/authorize",
+    "OAUTH_TOKEN_URL":
+      "https://login.microsoftonline.com/common/oauth2/v2.0/token",
+    "REDIRECT_URL": "https://localhost:8081/graph/auth/callback"
+  },
+  "CLIENT": {}
+}

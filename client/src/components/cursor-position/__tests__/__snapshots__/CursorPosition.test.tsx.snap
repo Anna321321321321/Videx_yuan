@@ -1,0 +1,222 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CursorPosition Unit Tests Check child component props 1`] = `
+<CursorPosition
+  style={
+    Object {
+      "height": "100px",
+      "width": "100px",
+    }
+  }
+>
+  <ReactCursorPosition
+    activationInteractionMouse="hover"
+    activationInteractionTouch="press"
+    hoverDelayInMs={0}
+    hoverOffDelayInMs={0}
+    isEnabled={true}
+    mapChildProps={[Function]}
+    onActivationChanged={[Function]}
+    onDetectedEnvironmentChanged={[Function]}
+    onPositionChanged={[Function]}
+    pressDurationInMs={500}
+    pressMoveThreshold={5}
+    shouldDecorateChildren={true}
+    shouldStopTouchMovePropagation={false}
+    style={
+      Object {
+        "height": "100px",
+        "width": "100px",
+      }
+    }
+    tapDurationInMs={180}
+    tapMoveThreshold={5}
+  >
+    <div
+      style={
+        Object {
+          "WebkitUserSelect": "none",
+          "height": "100px",
+          "width": "100px",
+        }
+      }
+    >
+      <Dummy
+        detectedEnvironment={
+          Object {
+            "isMouseDetected": false,
+            "isTouchDetected": false,
+          }
+        }
+        elementDimensions={
+          Object {
+            "height": 0,
+            "width": 0,
+          }
+        }
+        isActive={false}
+        isPositionOutside={true}
+        key=".0"
+        position={
+          Object {
+            "x": 0,
+            "y": 0,
+          }
+        }
+      >
+        <div>
+          Dummy
+        </div>
+      </Dummy>
+    </div>
+  </ReactCursorPosition>
+</CursorPosition>
+`;
+
+exports[`CursorPosition Unit Tests Render child components 1`] = `
+<CursorPosition
+  style={
+    Object {
+      "height": "100px",
+      "width": "100px",
+    }
+  }
+>
+  <ReactCursorPosition
+    activationInteractionMouse="hover"
+    activationInteractionTouch="press"
+    hoverDelayInMs={0}
+    hoverOffDelayInMs={0}
+    isEnabled={true}
+    mapChildProps={[Function]}
+    onActivationChanged={[Function]}
+    onDetectedEnvironmentChanged={[Function]}
+    onPositionChanged={[Function]}
+    pressDurationInMs={500}
+    pressMoveThreshold={5}
+    shouldDecorateChildren={true}
+    shouldStopTouchMovePropagation={false}
+    style={
+      Object {
+        "height": "100px",
+        "width": "100px",
+      }
+    }
+    tapDurationInMs={180}
+    tapMoveThreshold={5}
+  >
+    <div
+      style={
+        Object {
+          "WebkitUserSelect": "none",
+          "height": "100px",
+          "width": "100px",
+        }
+      }
+    >
+      <Dummy
+        detectedEnvironment={
+          Object {
+            "isMouseDetected": false,
+            "isTouchDetected": false,
+          }
+        }
+        elementDimensions={
+          Object {
+            "height": 0,
+            "width": 0,
+          }
+        }
+        isActive={false}
+        isPositionOutside={true}
+        key=".0"
+        position={
+          Object {
+            "x": 0,
+            "y": 0,
+          }
+        }
+      >
+        <div>
+          Dummy
+        </div>
+      </Dummy>
+      <Dummy
+        detectedEnvironment={
+          Object {
+            "isMouseDetected": false,
+            "isTouchDetected": false,
+          }
+        }
+        elementDimensions={
+          Object {
+            "height": 0,
+            "width": 0,
+          }
+        }
+        isActive={false}
+        isPositionOutside={true}
+        key=".1"
+        position={
+          Object {
+            "x": 0,
+            "y": 0,
+          }
+        }
+      >
+        <div>
+          Dummy
+        </div>
+      </Dummy>
+    </div>
+  </ReactCursorPosition>
+</CursorPosition>
+`;
+
+exports[`CursorPosition Unit Tests Set className & style 1`] = `
+<CursorPosition
+  className="test"
+  style={
+    Object {
+      "height": "100px",
+      "width": "100px",
+    }
+  }
+>
+  <ReactCursorPosition
+    activationInteractionMouse="hover"
+    activationInteractionTouch="press"
+    className="test"
+    hoverDelayInMs={0}
+    hoverOffDelayInMs={0}
+    isEnabled={true}
+    mapChildProps={[Function]}
+    onActivationChanged={[Function]}
+    onDetectedEnvironmentChanged={[Function]}
+    onPositionChanged={[Function]}
+    pressDurationInMs={500}
+    pressMoveThreshold={5}
+    shouldDecorateChildren={true}
+    shouldStopTouchMovePropagation={false}
+    style={
+      Object {
+        "height": "100px",
+        "width": "100px",
+      }
+    }
+    tapDurationInMs={180}
+    tapMoveThreshold={5}
+  >
+    <div
+      className="test"
+      style={
+        Object {
+          "WebkitUserSelect": "none",
+          "height": "100px",
+          "width": "100px",
+        }
+      }
+    />
+  </ReactCursorPosition>
+</CursorPosition>
+`;

@@ -1,0 +1,723 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ShareCourseModal Unit Tests Invisible 1`] = `
+<ShareCourseModel
+  link={null}
+  onCloseModal={[MockFunction]}
+  visible={false}
+>
+  <Modal
+    cancelButtonDisabled={false}
+    closable={false}
+    confirmLoading={false}
+    footer={null}
+    maskTransitionName="fade"
+    okButtonDisabled={false}
+    okType="primary"
+    prefixCls="ant-modal"
+    title="Link Created"
+    transitionName="zoom"
+    visible={false}
+    width={520}
+  >
+    <DialogWrap
+      cancelButtonDisabled={false}
+      closable={false}
+      closeIcon={
+        <span
+          className="ant-modal-close-x"
+        >
+          <Icon
+            className="ant-modal-close-icon"
+            type="close"
+          />
+        </span>
+      }
+      confirmLoading={false}
+      footer={null}
+      maskTransitionName="fade"
+      okButtonDisabled={false}
+      okType="primary"
+      onClose={[Function]}
+      prefixCls="ant-modal"
+      title="Link Created"
+      transitionName="zoom"
+      visible={false}
+      width={520}
+      wrapClassName=""
+    />
+  </Modal>
+</ShareCourseModel>
+`;
+
+exports[`ShareCourseModal Unit Tests Visible link is not null 1`] = `
+<ShareCourseModel
+  link="1"
+  onCloseModal={[MockFunction]}
+  visible={true}
+>
+  <Modal
+    cancelButtonDisabled={false}
+    closable={false}
+    confirmLoading={false}
+    footer={
+      <div>
+        <CopyToClipboard
+          onCopy={[Function]}
+          text="1"
+        >
+          <Button
+            block={false}
+            ghost={false}
+            icon="copy"
+            loading={false}
+            prefixCls="ant-btn"
+          />
+        </CopyToClipboard>
+        <Button
+          block={false}
+          ghost={false}
+          loading={false}
+          onClick={[MockFunction]}
+          prefixCls="ant-btn"
+          type="primary"
+        >
+          Close
+        </Button>
+      </div>
+    }
+    maskTransitionName="fade"
+    okButtonDisabled={false}
+    okType="primary"
+    prefixCls="ant-modal"
+    title="Link Created"
+    transitionName="zoom"
+    visible={true}
+    width={520}
+  >
+    <DialogWrap
+      cancelButtonDisabled={false}
+      closable={false}
+      closeIcon={
+        <span
+          className="ant-modal-close-x"
+        >
+          <Icon
+            className="ant-modal-close-icon"
+            type="close"
+          />
+        </span>
+      }
+      confirmLoading={false}
+      footer={
+        <div>
+          <CopyToClipboard
+            onCopy={[Function]}
+            text="1"
+          >
+            <Button
+              block={false}
+              ghost={false}
+              icon="copy"
+              loading={false}
+              prefixCls="ant-btn"
+            />
+          </CopyToClipboard>
+          <Button
+            block={false}
+            ghost={false}
+            loading={false}
+            onClick={[MockFunction]}
+            prefixCls="ant-btn"
+            type="primary"
+          >
+            Close
+          </Button>
+        </div>
+      }
+      maskTransitionName="fade"
+      okButtonDisabled={false}
+      okType="primary"
+      onClose={[Function]}
+      prefixCls="ant-modal"
+      title="Link Created"
+      transitionName="zoom"
+      visible={true}
+      width={520}
+      wrapClassName=""
+    >
+      <Portal
+        getContainer={[Function]}
+      >
+        <Dialog
+          cancelButtonDisabled={false}
+          className=""
+          closable={false}
+          closeIcon={
+            <span
+              className="ant-modal-close-x"
+            >
+              <Icon
+                className="ant-modal-close-icon"
+                type="close"
+              />
+            </span>
+          }
+          confirmLoading={false}
+          destroyOnClose={false}
+          footer={
+            <div>
+              <CopyToClipboard
+                onCopy={[Function]}
+                text="1"
+              >
+                <Button
+                  block={false}
+                  ghost={false}
+                  icon="copy"
+                  loading={false}
+                  prefixCls="ant-btn"
+                />
+              </CopyToClipboard>
+              <Button
+                block={false}
+                ghost={false}
+                loading={false}
+                onClick={[MockFunction]}
+                prefixCls="ant-btn"
+                type="primary"
+              >
+                Close
+              </Button>
+            </div>
+          }
+          key="dialog"
+          keyboard={true}
+          mask={true}
+          maskClosable={true}
+          maskTransitionName="fade"
+          okButtonDisabled={false}
+          okType="primary"
+          onClose={[Function]}
+          prefixCls="ant-modal"
+          title="Link Created"
+          transitionName="zoom"
+          visible={true}
+          width={520}
+          wrapClassName=""
+        >
+          <div>
+            <Animate
+              animation={Object {}}
+              component=""
+              componentProps={Object {}}
+              key="mask"
+              onAppear={[Function]}
+              onEnd={[Function]}
+              onEnter={[Function]}
+              onLeave={[Function]}
+              showProp="visible"
+              transitionAppear={true}
+              transitionEnter={true}
+              transitionLeave={true}
+              transitionName="fade"
+            >
+              <AnimateChild
+                animation={Object {}}
+                key="mask"
+                transitionAppear={true}
+                transitionEnter={true}
+                transitionLeave={true}
+                transitionName="fade"
+              >
+                <LazyRenderBox
+                  className="ant-modal-mask"
+                  hiddenClassName="ant-modal-mask-hidden"
+                  key="mask"
+                  style={Object {}}
+                  visible={true}
+                >
+                  <div
+                    className="ant-modal-mask"
+                    style={Object {}}
+                  />
+                </LazyRenderBox>
+              </AnimateChild>
+            </Animate>
+            <div
+              aria-labelledby="rcDialogTitle1"
+              className="ant-modal-wrap "
+              onClick={[Function]}
+              onKeyDown={[Function]}
+              role="dialog"
+              style={
+                Object {
+                  "display": null,
+                }
+              }
+              tabIndex={-1}
+            >
+              <Animate
+                animation={Object {}}
+                component=""
+                componentProps={Object {}}
+                key="dialog"
+                onAppear={[Function]}
+                onEnd={[Function]}
+                onEnter={[Function]}
+                onLeave={[Function]}
+                showProp="visible"
+                transitionAppear={true}
+                transitionEnter={true}
+                transitionLeave={true}
+                transitionName="zoom"
+              >
+                <AnimateChild
+                  animation={Object {}}
+                  key="dialog-element"
+                  transitionAppear={true}
+                  transitionEnter={true}
+                  transitionLeave={true}
+                  transitionName="zoom"
+                >
+                  <LazyRenderBox
+                    className="ant-modal "
+                    key="dialog-element"
+                    role="document"
+                    style={
+                      Object {
+                        "width": 520,
+                      }
+                    }
+                    visible={true}
+                  >
+                    <div
+                      className="ant-modal "
+                      role="document"
+                      style={
+                        Object {
+                          "width": 520,
+                        }
+                      }
+                    >
+                      <div
+                        style={
+                          Object {
+                            "height": 0,
+                            "overflow": "hidden",
+                            "width": 0,
+                          }
+                        }
+                        tabIndex={0}
+                      >
+                        sentinelStart
+                      </div>
+                      <div
+                        className="ant-modal-content"
+                      >
+                        <div
+                          className="ant-modal-header"
+                        >
+                          <div
+                            className="ant-modal-title"
+                            id="rcDialogTitle1"
+                          >
+                            Link Created
+                          </div>
+                        </div>
+                        <div
+                          className="ant-modal-body"
+                        >
+                          <div
+                            style={
+                              Object {
+                                "alignItems": "center",
+                                "display": "flex",
+                                "justifyContent": "center",
+                              }
+                            }
+                          >
+                            <div>
+                              Anyone with this link can access this course.
+                              <div>
+                                <Input
+                                  disabled={true}
+                                  prefixCls="ant-input"
+                                  type="text"
+                                  value="1"
+                                >
+                                  <input
+                                    className="ant-input ant-input-disabled"
+                                    disabled={true}
+                                    onKeyDown={[Function]}
+                                    type="text"
+                                    value="1"
+                                  />
+                                </Input>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          className="ant-modal-footer"
+                        >
+                          <div>
+                            <CopyToClipboard
+                              onCopy={[Function]}
+                              text="1"
+                            >
+                              <Button
+                                block={false}
+                                ghost={false}
+                                icon="copy"
+                                loading={false}
+                                onClick={[Function]}
+                                prefixCls="ant-btn"
+                              >
+                                <Wave>
+                                  <button
+                                    className="ant-btn ant-btn-icon-only"
+                                    onClick={[Function]}
+                                    type="button"
+                                  >
+                                    <Icon
+                                      type="copy"
+                                    >
+                                      <i
+                                        className="anticon anticon-copy"
+                                      >
+                                        <IconReact
+                                          className=""
+                                          type="copy-o"
+                                        >
+                                          <svg
+                                            aria-hidden="true"
+                                            className=""
+                                            data-icon="copy"
+                                            fill="currentColor"
+                                            focusable="false"
+                                            height="1em"
+                                            key="svg-copy"
+                                            viewBox="64 64 896 896"
+                                            width="1em"
+                                          >
+                                            <path
+                                              d="M832 64H296c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h496v688c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8V96c0-17.7-14.3-32-32-32zM704 192H192c-17.7 0-32 14.3-32 32v530.7c0 8.5 3.4 16.6 9.4 22.6l173.3 173.3c2.2 2.2 4.7 4 7.4 5.5v1.9h4.2c3.5 1.3 7.2 2 11 2H704c17.7 0 32-14.3 32-32V224c0-17.7-14.3-32-32-32zM350 856.2L263.9 770H350v86.2zM664 888H414V746c0-22.1-17.9-40-40-40H232V264h432v624z"
+                                              key="svg-copy-svg-0"
+                                            />
+                                          </svg>
+                                        </IconReact>
+                                      </i>
+                                    </Icon>
+                                  </button>
+                                </Wave>
+                              </Button>
+                            </CopyToClipboard>
+                            <Button
+                              block={false}
+                              ghost={false}
+                              loading={false}
+                              onClick={[MockFunction]}
+                              prefixCls="ant-btn"
+                              type="primary"
+                            >
+                              <Wave>
+                                <button
+                                  className="ant-btn ant-btn-primary"
+                                  onClick={[Function]}
+                                  type="button"
+                                >
+                                  <span
+                                    key=".0"
+                                  >
+                                    Close
+                                  </span>
+                                </button>
+                              </Wave>
+                            </Button>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        style={
+                          Object {
+                            "height": 0,
+                            "overflow": "hidden",
+                            "width": 0,
+                          }
+                        }
+                        tabIndex={0}
+                      >
+                        sentinelEnd
+                      </div>
+                    </div>
+                  </LazyRenderBox>
+                </AnimateChild>
+              </Animate>
+            </div>
+          </div>
+        </Dialog>
+      </Portal>
+    </DialogWrap>
+  </Modal>
+</ShareCourseModel>
+`;
+
+exports[`ShareCourseModal Unit Tests Visible link is null 1`] = `
+<ShareCourseModel
+  link={null}
+  onCloseModal={[MockFunction]}
+  visible={true}
+>
+  <Modal
+    cancelButtonDisabled={false}
+    closable={false}
+    confirmLoading={false}
+    footer={null}
+    maskTransitionName="fade"
+    okButtonDisabled={false}
+    okType="primary"
+    prefixCls="ant-modal"
+    title="Link Created"
+    transitionName="zoom"
+    visible={true}
+    width={520}
+  >
+    <DialogWrap
+      cancelButtonDisabled={false}
+      closable={false}
+      closeIcon={
+        <span
+          className="ant-modal-close-x"
+        >
+          <Icon
+            className="ant-modal-close-icon"
+            type="close"
+          />
+        </span>
+      }
+      confirmLoading={false}
+      footer={null}
+      maskTransitionName="fade"
+      okButtonDisabled={false}
+      okType="primary"
+      onClose={[Function]}
+      prefixCls="ant-modal"
+      title="Link Created"
+      transitionName="zoom"
+      visible={true}
+      width={520}
+      wrapClassName=""
+    >
+      <Portal
+        getContainer={[Function]}
+      >
+        <Dialog
+          cancelButtonDisabled={false}
+          className=""
+          closable={false}
+          closeIcon={
+            <span
+              className="ant-modal-close-x"
+            >
+              <Icon
+                className="ant-modal-close-icon"
+                type="close"
+              />
+            </span>
+          }
+          confirmLoading={false}
+          destroyOnClose={false}
+          footer={null}
+          key="dialog"
+          keyboard={true}
+          mask={true}
+          maskClosable={true}
+          maskTransitionName="fade"
+          okButtonDisabled={false}
+          okType="primary"
+          onClose={[Function]}
+          prefixCls="ant-modal"
+          title="Link Created"
+          transitionName="zoom"
+          visible={true}
+          width={520}
+          wrapClassName=""
+        >
+          <div>
+            <Animate
+              animation={Object {}}
+              component=""
+              componentProps={Object {}}
+              key="mask"
+              onAppear={[Function]}
+              onEnd={[Function]}
+              onEnter={[Function]}
+              onLeave={[Function]}
+              showProp="visible"
+              transitionAppear={true}
+              transitionEnter={true}
+              transitionLeave={true}
+              transitionName="fade"
+            >
+              <AnimateChild
+                animation={Object {}}
+                key="mask"
+                transitionAppear={true}
+                transitionEnter={true}
+                transitionLeave={true}
+                transitionName="fade"
+              >
+                <LazyRenderBox
+                  className="ant-modal-mask"
+                  hiddenClassName="ant-modal-mask-hidden"
+                  key="mask"
+                  style={Object {}}
+                  visible={true}
+                >
+                  <div
+                    className="ant-modal-mask"
+                    style={Object {}}
+                  />
+                </LazyRenderBox>
+              </AnimateChild>
+            </Animate>
+            <div
+              aria-labelledby="rcDialogTitle0"
+              className="ant-modal-wrap "
+              onClick={[Function]}
+              onKeyDown={[Function]}
+              role="dialog"
+              style={
+                Object {
+                  "display": null,
+                }
+              }
+              tabIndex={-1}
+            >
+              <Animate
+                animation={Object {}}
+                component=""
+                componentProps={Object {}}
+                key="dialog"
+                onAppear={[Function]}
+                onEnd={[Function]}
+                onEnter={[Function]}
+                onLeave={[Function]}
+                showProp="visible"
+                transitionAppear={true}
+                transitionEnter={true}
+                transitionLeave={true}
+                transitionName="zoom"
+              >
+                <AnimateChild
+                  animation={Object {}}
+                  key="dialog-element"
+                  transitionAppear={true}
+                  transitionEnter={true}
+                  transitionLeave={true}
+                  transitionName="zoom"
+                >
+                  <LazyRenderBox
+                    className="ant-modal "
+                    key="dialog-element"
+                    role="document"
+                    style={
+                      Object {
+                        "width": 520,
+                      }
+                    }
+                    visible={true}
+                  >
+                    <div
+                      className="ant-modal "
+                      role="document"
+                      style={
+                        Object {
+                          "width": 520,
+                        }
+                      }
+                    >
+                      <div
+                        style={
+                          Object {
+                            "height": 0,
+                            "overflow": "hidden",
+                            "width": 0,
+                          }
+                        }
+                        tabIndex={0}
+                      >
+                        sentinelStart
+                      </div>
+                      <div
+                        className="ant-modal-content"
+                      >
+                        <div
+                          className="ant-modal-header"
+                        >
+                          <div
+                            className="ant-modal-title"
+                            id="rcDialogTitle0"
+                          >
+                            Link Created
+                          </div>
+                        </div>
+                        <div
+                          className="ant-modal-body"
+                        >
+                          <div
+                            style={
+                              Object {
+                                "alignItems": "center",
+                                "display": "flex",
+                                "justifyContent": "center",
+                              }
+                            }
+                          >
+                            <Spin
+                              prefixCls="ant-spin"
+                              size="default"
+                              spinning={true}
+                              wrapperClassName=""
+                            >
+                              <div
+                                className="ant-spin ant-spin-spinning"
+                              >
+                                <span
+                                  className="ant-spin-dot ant-spin-dot-spin"
+                                >
+                                  <i />
+                                  <i />
+                                  <i />
+                                  <i />
+                                </span>
+                              </div>
+                            </Spin>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        style={
+                          Object {
+                            "height": 0,
+                            "overflow": "hidden",
+                            "width": 0,
+                          }
+                        }
+                        tabIndex={0}
+                      >
+                        sentinelEnd
+                      </div>
+                    </div>
+                  </LazyRenderBox>
+                </AnimateChild>
+              </Animate>
+            </div>
+          </div>
+        </Dialog>
+      </Portal>
+    </DialogWrap>
+  </Modal>
+</ShareCourseModel>
+`;

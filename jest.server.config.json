@@ -1,0 +1,18 @@
+{
+  "moduleFileExtensions": ["js", "jsx", "json"],
+  "moduleNameMapper": {
+    "videx/api": "<rootDir>/dist/videx/api",
+    "videx/server/core/azure": "<rootDir>/dist/server/src/core/azure",
+    "videx/server/mongodb": "<rootDir>/dist/server/src/mongodb",
+    "videx/server/core/error": "<rootDir>/dist/server/src/core/error",
+    "videx/server/redis": "<rootDir>/dist/server/src/redis",
+    "videx/server/core/circuit-breaker":
+      "<rootDir>/dist/server/src/core/circuit-breaker",
+    "videx/server/azure": "<rootDir>/dist/server/src/azure",
+    "videx/server/log": "<rootDir>/dist/server/src/log",
+    "videx/server/entities": "<rootDir>/dist/server/src/entities",
+    "videx/server/utilities": "<rootDir>/dist/server/src/utilities"
+  },
+  "testMatch": ["<rootDir>/dist/server/**/__tests__/**/*.(js|jsx)"],
+  "testEnvironment": "node"
+}

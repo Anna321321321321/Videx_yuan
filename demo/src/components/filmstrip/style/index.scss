@@ -1,0 +1,56 @@
+@import '../../../style/index';
+
+.#{$videx-prefix}-thumbnail {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+
+  .#{$videx-prefix}-thumbnail-column {
+    height: 100%;
+    width: 100%;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+  }
+}
+
+.#{$videx-prefix}-highlights {
+  background-color: rgba(60, 69, 79, 0.2);
+  // box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  opacity: 0.8;
+  z-index: 1;
+}
+
+.#{$videx-prefix}-annotations {
+  z-index: 1;
+}
+
+.#{$videx-prefix}-indicators {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.#{$videx-prefix}-filmstrip-annotation-picker {
+  top: -50;
+  position: absolute;
+  z-index: 12;
+  width: 240px;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #fff;
+  display: block;
+}
+
+.ant-popover-placement-topLeft > .ant-popover-content > .ant-popover-arrow {
+  left: 1% !important;
+}

@@ -1,0 +1,1281 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormDecorator Unit Tests active 1`] = `
+<Component
+  fields={
+    Object {
+      "category": Object {
+        "value": "bug",
+      },
+      "email": Object {
+        "value": "test@ubc.com",
+      },
+      "message": Object {
+        "value": "test",
+      },
+      "rate": Object {
+        "value": 1,
+      },
+    }
+  }
+  onCancel={null}
+  onChange={null}
+  onReset={null}
+  onSubmit={null}
+  status="active"
+  visible={true}
+>
+  <Modal
+    cancelButtonDisabled={false}
+    closable={true}
+    confirmLoading={false}
+    footer={null}
+    maskTransitionName="fade"
+    okButtonDisabled={false}
+    okType="primary"
+    onCancel={[Function]}
+    prefixCls="ant-modal"
+    title="Online Feedback"
+    transitionName="zoom"
+    visible={true}
+    width={520}
+  >
+    <DialogWrap
+      cancelButtonDisabled={false}
+      closable={true}
+      closeIcon={
+        <span
+          className="ant-modal-close-x"
+        >
+          <Icon
+            className="ant-modal-close-icon"
+            type="close"
+          />
+        </span>
+      }
+      confirmLoading={false}
+      footer={null}
+      maskTransitionName="fade"
+      okButtonDisabled={false}
+      okType="primary"
+      onCancel={[Function]}
+      onClose={[Function]}
+      prefixCls="ant-modal"
+      title="Online Feedback"
+      transitionName="zoom"
+      visible={true}
+      width={520}
+      wrapClassName=""
+    >
+      <Portal
+        getContainer={[Function]}
+      >
+        <Dialog
+          cancelButtonDisabled={false}
+          className=""
+          closable={true}
+          closeIcon={
+            <span
+              className="ant-modal-close-x"
+            >
+              <Icon
+                className="ant-modal-close-icon"
+                type="close"
+              />
+            </span>
+          }
+          confirmLoading={false}
+          destroyOnClose={false}
+          footer={null}
+          key="dialog"
+          keyboard={true}
+          mask={true}
+          maskClosable={true}
+          maskTransitionName="fade"
+          okButtonDisabled={false}
+          okType="primary"
+          onCancel={[Function]}
+          onClose={[Function]}
+          prefixCls="ant-modal"
+          title="Online Feedback"
+          transitionName="zoom"
+          visible={true}
+          width={520}
+          wrapClassName=""
+        >
+          <div>
+            <Animate
+              animation={Object {}}
+              component=""
+              componentProps={Object {}}
+              key="mask"
+              onAppear={[Function]}
+              onEnd={[Function]}
+              onEnter={[Function]}
+              onLeave={[Function]}
+              showProp="visible"
+              transitionAppear={true}
+              transitionEnter={true}
+              transitionLeave={true}
+              transitionName="fade"
+            >
+              <AnimateChild
+                animation={Object {}}
+                key="mask"
+                transitionAppear={true}
+                transitionEnter={true}
+                transitionLeave={true}
+                transitionName="fade"
+              >
+                <LazyRenderBox
+                  className="ant-modal-mask"
+                  hiddenClassName="ant-modal-mask-hidden"
+                  key="mask"
+                  style={Object {}}
+                  visible={true}
+                >
+                  <div
+                    className="ant-modal-mask"
+                    style={Object {}}
+                  />
+                </LazyRenderBox>
+              </AnimateChild>
+            </Animate>
+            <div
+              aria-labelledby="rcDialogTitle0"
+              className="ant-modal-wrap "
+              onClick={[Function]}
+              onKeyDown={[Function]}
+              role="dialog"
+              style={
+                Object {
+                  "display": null,
+                }
+              }
+              tabIndex={-1}
+            >
+              <Animate
+                animation={Object {}}
+                component=""
+                componentProps={Object {}}
+                key="dialog"
+                onAppear={[Function]}
+                onEnd={[Function]}
+                onEnter={[Function]}
+                onLeave={[Function]}
+                showProp="visible"
+                transitionAppear={true}
+                transitionEnter={true}
+                transitionLeave={true}
+                transitionName="zoom"
+              >
+                <AnimateChild
+                  animation={Object {}}
+                  key="dialog-element"
+                  transitionAppear={true}
+                  transitionEnter={true}
+                  transitionLeave={true}
+                  transitionName="zoom"
+                >
+                  <LazyRenderBox
+                    className="ant-modal "
+                    key="dialog-element"
+                    role="document"
+                    style={
+                      Object {
+                        "width": 520,
+                      }
+                    }
+                    visible={true}
+                  >
+                    <div
+                      className="ant-modal "
+                      role="document"
+                      style={
+                        Object {
+                          "width": 520,
+                        }
+                      }
+                    >
+                      <div
+                        style={
+                          Object {
+                            "height": 0,
+                            "overflow": "hidden",
+                            "width": 0,
+                          }
+                        }
+                        tabIndex={0}
+                      >
+                        sentinelStart
+                      </div>
+                      <div
+                        className="ant-modal-content"
+                      >
+                        <button
+                          aria-label="Close"
+                          className="ant-modal-close"
+                          onClick={[Function]}
+                        >
+                          <span
+                            className="ant-modal-close-x"
+                          >
+                            <Icon
+                              className="ant-modal-close-icon"
+                              type="close"
+                            >
+                              <i
+                                className="anticon anticon-close ant-modal-close-icon"
+                              >
+                                <IconReact
+                                  className=""
+                                  type="close-o"
+                                >
+                                  <svg
+                                    aria-hidden="true"
+                                    className=""
+                                    data-icon="close"
+                                    fill="currentColor"
+                                    focusable="false"
+                                    height="1em"
+                                    key="svg-close"
+                                    viewBox="64 64 896 896"
+                                    width="1em"
+                                  >
+                                    <path
+                                      d="M563.8 512l262.5-312.9c4.4-5.2.7-13.1-6.1-13.1h-79.8c-4.7 0-9.2 2.1-12.3 5.7L511.6 449.8 295.1 191.7c-3-3.6-7.5-5.7-12.3-5.7H203c-6.8 0-10.5 7.9-6.1 13.1L459.4 512 196.9 824.9A7.95 7.95 0 0 0 203 838h79.8c4.7 0 9.2-2.1 12.3-5.7l216.5-258.1 216.5 258.1c3 3.6 7.5 5.7 12.3 5.7h79.8c6.8 0 10.5-7.9 6.1-13.1L563.8 512z"
+                                      key="svg-close-svg-0"
+                                    />
+                                  </svg>
+                                </IconReact>
+                              </i>
+                            </Icon>
+                          </span>
+                        </button>
+                        <div
+                          className="ant-modal-header"
+                        >
+                          <div
+                            className="ant-modal-title"
+                            id="rcDialogTitle0"
+                          >
+                            Online Feedback
+                          </div>
+                        </div>
+                        <div
+                          className="ant-modal-body"
+                        >
+                          <Spin
+                            prefixCls="ant-spin"
+                            size="large"
+                            spinning={true}
+                            wrapperClassName=""
+                          >
+                            <Animate
+                              animation={Object {}}
+                              className="ant-spin-nested-loading"
+                              component="div"
+                              componentProps={Object {}}
+                              onAppear={[Function]}
+                              onEnd={[Function]}
+                              onEnter={[Function]}
+                              onLeave={[Function]}
+                              style={null}
+                              transitionAppear={false}
+                              transitionEnter={true}
+                              transitionLeave={true}
+                              transitionName="fade"
+                            >
+                              <div
+                                className="ant-spin-nested-loading"
+                                style={null}
+                              >
+                                <AnimateChild
+                                  animation={Object {}}
+                                  key="loading"
+                                  transitionAppear={false}
+                                  transitionEnter={true}
+                                  transitionLeave={true}
+                                  transitionName="fade"
+                                >
+                                  <div
+                                    key="loading"
+                                  >
+                                    <div
+                                      className="ant-spin ant-spin-lg ant-spin-spinning"
+                                    >
+                                      <span
+                                        className="ant-spin-dot ant-spin-dot-spin"
+                                      >
+                                        <i />
+                                        <i />
+                                        <i />
+                                        <i />
+                                      </span>
+                                    </div>
+                                  </div>
+                                </AnimateChild>
+                                <AnimateChild
+                                  animation={Object {}}
+                                  key="container"
+                                  transitionAppear={false}
+                                  transitionEnter={true}
+                                  transitionLeave={true}
+                                  transitionName="fade"
+                                >
+                                  <div
+                                    className="ant-spin-container ant-spin-blur"
+                                    key="container"
+                                  />
+                                </AnimateChild>
+                              </div>
+                            </Animate>
+                          </Spin>
+                        </div>
+                      </div>
+                      <div
+                        style={
+                          Object {
+                            "height": 0,
+                            "overflow": "hidden",
+                            "width": 0,
+                          }
+                        }
+                        tabIndex={0}
+                      >
+                        sentinelEnd
+                      </div>
+                    </div>
+                  </LazyRenderBox>
+                </AnimateChild>
+              </Animate>
+            </div>
+          </div>
+        </Dialog>
+      </Portal>
+    </DialogWrap>
+  </Modal>
+</Component>
+`;
+
+exports[`FormDecorator Unit Tests exception 1`] = `
+<Component
+  fields={
+    Object {
+      "category": Object {
+        "value": "bug",
+      },
+      "email": Object {
+        "value": "test@ubc.com",
+      },
+      "message": Object {
+        "value": "test",
+      },
+      "rate": Object {
+        "value": 1,
+      },
+    }
+  }
+  onCancel={null}
+  onChange={null}
+  onReset={null}
+  onSubmit={null}
+  status="exception"
+  visible={true}
+>
+  <Modal
+    cancelButtonDisabled={false}
+    closable={true}
+    confirmLoading={false}
+    footer={null}
+    maskTransitionName="fade"
+    okButtonDisabled={false}
+    okType="primary"
+    onCancel={[Function]}
+    prefixCls="ant-modal"
+    title="Online Feedback"
+    transitionName="zoom"
+    visible={true}
+    width={520}
+  >
+    <DialogWrap
+      cancelButtonDisabled={false}
+      closable={true}
+      closeIcon={
+        <span
+          className="ant-modal-close-x"
+        >
+          <Icon
+            className="ant-modal-close-icon"
+            type="close"
+          />
+        </span>
+      }
+      confirmLoading={false}
+      footer={null}
+      maskTransitionName="fade"
+      okButtonDisabled={false}
+      okType="primary"
+      onCancel={[Function]}
+      onClose={[Function]}
+      prefixCls="ant-modal"
+      title="Online Feedback"
+      transitionName="zoom"
+      visible={true}
+      width={520}
+      wrapClassName=""
+    >
+      <Portal
+        getContainer={[Function]}
+      >
+        <Dialog
+          cancelButtonDisabled={false}
+          className=""
+          closable={true}
+          closeIcon={
+            <span
+              className="ant-modal-close-x"
+            >
+              <Icon
+                className="ant-modal-close-icon"
+                type="close"
+              />
+            </span>
+          }
+          confirmLoading={false}
+          destroyOnClose={false}
+          footer={null}
+          key="dialog"
+          keyboard={true}
+          mask={true}
+          maskClosable={true}
+          maskTransitionName="fade"
+          okButtonDisabled={false}
+          okType="primary"
+          onCancel={[Function]}
+          onClose={[Function]}
+          prefixCls="ant-modal"
+          title="Online Feedback"
+          transitionName="zoom"
+          visible={true}
+          width={520}
+          wrapClassName=""
+        >
+          <div>
+            <Animate
+              animation={Object {}}
+              component=""
+              componentProps={Object {}}
+              key="mask"
+              onAppear={[Function]}
+              onEnd={[Function]}
+              onEnter={[Function]}
+              onLeave={[Function]}
+              showProp="visible"
+              transitionAppear={true}
+              transitionEnter={true}
+              transitionLeave={true}
+              transitionName="fade"
+            >
+              <AnimateChild
+                animation={Object {}}
+                key="mask"
+                transitionAppear={true}
+                transitionEnter={true}
+                transitionLeave={true}
+                transitionName="fade"
+              >
+                <LazyRenderBox
+                  className="ant-modal-mask"
+                  hiddenClassName="ant-modal-mask-hidden"
+                  key="mask"
+                  style={Object {}}
+                  visible={true}
+                >
+                  <div
+                    className="ant-modal-mask"
+                    style={Object {}}
+                  />
+                </LazyRenderBox>
+              </AnimateChild>
+            </Animate>
+            <div
+              aria-labelledby="rcDialogTitle2"
+              className="ant-modal-wrap "
+              onClick={[Function]}
+              onKeyDown={[Function]}
+              role="dialog"
+              style={
+                Object {
+                  "display": null,
+                }
+              }
+              tabIndex={-1}
+            >
+              <Animate
+                animation={Object {}}
+                component=""
+                componentProps={Object {}}
+                key="dialog"
+                onAppear={[Function]}
+                onEnd={[Function]}
+                onEnter={[Function]}
+                onLeave={[Function]}
+                showProp="visible"
+                transitionAppear={true}
+                transitionEnter={true}
+                transitionLeave={true}
+                transitionName="zoom"
+              >
+                <AnimateChild
+                  animation={Object {}}
+                  key="dialog-element"
+                  transitionAppear={true}
+                  transitionEnter={true}
+                  transitionLeave={true}
+                  transitionName="zoom"
+                >
+                  <LazyRenderBox
+                    className="ant-modal "
+                    key="dialog-element"
+                    role="document"
+                    style={
+                      Object {
+                        "width": 520,
+                      }
+                    }
+                    visible={true}
+                  >
+                    <div
+                      className="ant-modal "
+                      role="document"
+                      style={
+                        Object {
+                          "width": 520,
+                        }
+                      }
+                    >
+                      <div
+                        style={
+                          Object {
+                            "height": 0,
+                            "overflow": "hidden",
+                            "width": 0,
+                          }
+                        }
+                        tabIndex={0}
+                      >
+                        sentinelStart
+                      </div>
+                      <div
+                        className="ant-modal-content"
+                      >
+                        <button
+                          aria-label="Close"
+                          className="ant-modal-close"
+                          onClick={[Function]}
+                        >
+                          <span
+                            className="ant-modal-close-x"
+                          >
+                            <Icon
+                              className="ant-modal-close-icon"
+                              type="close"
+                            >
+                              <i
+                                className="anticon anticon-close ant-modal-close-icon"
+                              >
+                                <IconReact
+                                  className=""
+                                  type="close-o"
+                                >
+                                  <svg
+                                    aria-hidden="true"
+                                    className=""
+                                    data-icon="close"
+                                    fill="currentColor"
+                                    focusable="false"
+                                    height="1em"
+                                    key="svg-close"
+                                    viewBox="64 64 896 896"
+                                    width="1em"
+                                  >
+                                    <path
+                                      d="M563.8 512l262.5-312.9c4.4-5.2.7-13.1-6.1-13.1h-79.8c-4.7 0-9.2 2.1-12.3 5.7L511.6 449.8 295.1 191.7c-3-3.6-7.5-5.7-12.3-5.7H203c-6.8 0-10.5 7.9-6.1 13.1L459.4 512 196.9 824.9A7.95 7.95 0 0 0 203 838h79.8c4.7 0 9.2-2.1 12.3-5.7l216.5-258.1 216.5 258.1c3 3.6 7.5 5.7 12.3 5.7h79.8c6.8 0 10.5-7.9 6.1-13.1L563.8 512z"
+                                      key="svg-close-svg-0"
+                                    />
+                                  </svg>
+                                </IconReact>
+                              </i>
+                            </Icon>
+                          </span>
+                        </button>
+                        <div
+                          className="ant-modal-header"
+                        >
+                          <div
+                            className="ant-modal-title"
+                            id="rcDialogTitle2"
+                          >
+                            Online Feedback
+                          </div>
+                        </div>
+                        <div
+                          className="ant-modal-body"
+                        >
+                          <Spin
+                            prefixCls="ant-spin"
+                            size="large"
+                            spinning={false}
+                            wrapperClassName=""
+                          >
+                            <Animate
+                              animation={Object {}}
+                              className="ant-spin-nested-loading"
+                              component="div"
+                              componentProps={Object {}}
+                              onAppear={[Function]}
+                              onEnd={[Function]}
+                              onEnter={[Function]}
+                              onLeave={[Function]}
+                              style={null}
+                              transitionAppear={false}
+                              transitionEnter={true}
+                              transitionLeave={true}
+                              transitionName="fade"
+                            >
+                              <div
+                                className="ant-spin-nested-loading"
+                                style={null}
+                              >
+                                <AnimateChild
+                                  animation={Object {}}
+                                  key="container"
+                                  transitionAppear={false}
+                                  transitionEnter={true}
+                                  transitionLeave={true}
+                                  transitionName="fade"
+                                >
+                                  <div
+                                    className="ant-spin-container"
+                                    key="container"
+                                  >
+                                    <div
+                                      style={
+                                        Object {
+                                          "alignItems": "center",
+                                          "display": "flex",
+                                          "flexDirection": "column",
+                                          "justifyContent": "center",
+                                        }
+                                      }
+                                    >
+                                      <Progress
+                                        percent={100}
+                                        prefixCls="ant-progress"
+                                        showInfo={true}
+                                        size="default"
+                                        status="exception"
+                                        trailColor="#f3f3f3"
+                                        type="circle"
+                                      >
+                                        <div
+                                          className="ant-progress ant-progress-circle ant-progress-status-exception ant-progress-show-info ant-progress-default"
+                                        >
+                                          <div
+                                            className="ant-progress-inner"
+                                            style={
+                                              Object {
+                                                "fontSize": 24,
+                                                "height": 120,
+                                                "width": 120,
+                                              }
+                                            }
+                                          >
+                                            <Progress
+                                              className=""
+                                              gapDegree={false}
+                                              gapPosition="top"
+                                              percent={100}
+                                              prefixCls="ant-progress"
+                                              strokeColor="#ff5500"
+                                              strokeLinecap="round"
+                                              strokeWidth={6}
+                                              style={Object {}}
+                                              trailColor="#f3f3f3"
+                                              trailWidth={6}
+                                            >
+                                              <svg
+                                                className="ant-progress-circle "
+                                                style={Object {}}
+                                                viewBox="0 0 100 100"
+                                              >
+                                                <path
+                                                  className="ant-progress-circle-trail"
+                                                  d="M 50,50 m 0,-47
+     a 47,47 0 1 1 0,94
+     a 47,47 0 1 1 0,-94"
+                                                  fillOpacity="0"
+                                                  stroke="#f3f3f3"
+                                                  strokeLinecap="round"
+                                                  strokeWidth={6}
+                                                  style={
+                                                    Object {
+                                                      "strokeDasharray": "295.3097094374406px 295.3097094374406px",
+                                                      "strokeDashoffset": "-0px",
+                                                      "transition": "stroke-dashoffset .3s ease 0s, stroke-dasharray .3s ease 0s, stroke .3s",
+                                                    }
+                                                  }
+                                                />
+                                                <path
+                                                  className="ant-progress-circle-path"
+                                                  d="M 50,50 m 0,-47
+     a 47,47 0 1 1 0,94
+     a 47,47 0 1 1 0,-94"
+                                                  fillOpacity="0"
+                                                  strokeLinecap="round"
+                                                  strokeWidth={6}
+                                                  style={
+                                                    Object {
+                                                      "stroke": "#ff5500",
+                                                      "strokeDasharray": "295.3097094374406px 295.3097094374406px",
+                                                      "strokeDashoffset": "-0px",
+                                                      "transition": "stroke-dashoffset .3s ease 0s, stroke-dasharray .3s ease 0s, stroke .3s, stroke-width .06s ease .3s",
+                                                    }
+                                                  }
+                                                />
+                                              </svg>
+                                            </Progress>
+                                            <span
+                                              className="ant-progress-text"
+                                            >
+                                              <Icon
+                                                theme="outlined"
+                                                type="close"
+                                              >
+                                                <i
+                                                  className="anticon anticon-close"
+                                                >
+                                                  <IconReact
+                                                    className=""
+                                                    type="close-o"
+                                                  >
+                                                    <svg
+                                                      aria-hidden="true"
+                                                      className=""
+                                                      data-icon="close"
+                                                      fill="currentColor"
+                                                      focusable="false"
+                                                      height="1em"
+                                                      key="svg-close"
+                                                      viewBox="64 64 896 896"
+                                                      width="1em"
+                                                    >
+                                                      <path
+                                                        d="M563.8 512l262.5-312.9c4.4-5.2.7-13.1-6.1-13.1h-79.8c-4.7 0-9.2 2.1-12.3 5.7L511.6 449.8 295.1 191.7c-3-3.6-7.5-5.7-12.3-5.7H203c-6.8 0-10.5 7.9-6.1 13.1L459.4 512 196.9 824.9A7.95 7.95 0 0 0 203 838h79.8c4.7 0 9.2-2.1 12.3-5.7l216.5-258.1 216.5 258.1c3 3.6 7.5 5.7 12.3 5.7h79.8c6.8 0 10.5-7.9 6.1-13.1L563.8 512z"
+                                                        key="svg-close-svg-0"
+                                                      />
+                                                    </svg>
+                                                  </IconReact>
+                                                </i>
+                                              </Icon>
+                                            </span>
+                                          </div>
+                                        </div>
+                                      </Progress>
+                                      <div>
+                                        Thank you for your feedback!
+                                      </div>
+                                    </div>
+                                  </div>
+                                </AnimateChild>
+                              </div>
+                            </Animate>
+                          </Spin>
+                        </div>
+                      </div>
+                      <div
+                        style={
+                          Object {
+                            "height": 0,
+                            "overflow": "hidden",
+                            "width": 0,
+                          }
+                        }
+                        tabIndex={0}
+                      >
+                        sentinelEnd
+                      </div>
+                    </div>
+                  </LazyRenderBox>
+                </AnimateChild>
+              </Animate>
+            </div>
+          </div>
+        </Dialog>
+      </Portal>
+    </DialogWrap>
+  </Modal>
+</Component>
+`;
+
+exports[`FormDecorator Unit Tests success 1`] = `
+<Component
+  fields={
+    Object {
+      "category": Object {
+        "value": "bug",
+      },
+      "email": Object {
+        "value": "test@ubc.com",
+      },
+      "message": Object {
+        "value": "test",
+      },
+      "rate": Object {
+        "value": 1,
+      },
+    }
+  }
+  onCancel={null}
+  onChange={null}
+  onReset={null}
+  onSubmit={null}
+  status="success"
+  visible={true}
+>
+  <Modal
+    cancelButtonDisabled={false}
+    closable={true}
+    confirmLoading={false}
+    footer={null}
+    maskTransitionName="fade"
+    okButtonDisabled={false}
+    okType="primary"
+    onCancel={[Function]}
+    prefixCls="ant-modal"
+    title="Online Feedback"
+    transitionName="zoom"
+    visible={true}
+    width={520}
+  >
+    <DialogWrap
+      cancelButtonDisabled={false}
+      closable={true}
+      closeIcon={
+        <span
+          className="ant-modal-close-x"
+        >
+          <Icon
+            className="ant-modal-close-icon"
+            type="close"
+          />
+        </span>
+      }
+      confirmLoading={false}
+      footer={null}
+      maskTransitionName="fade"
+      okButtonDisabled={false}
+      okType="primary"
+      onCancel={[Function]}
+      onClose={[Function]}
+      prefixCls="ant-modal"
+      title="Online Feedback"
+      transitionName="zoom"
+      visible={true}
+      width={520}
+      wrapClassName=""
+    >
+      <Portal
+        getContainer={[Function]}
+      >
+        <Dialog
+          cancelButtonDisabled={false}
+          className=""
+          closable={true}
+          closeIcon={
+            <span
+              className="ant-modal-close-x"
+            >
+              <Icon
+                className="ant-modal-close-icon"
+                type="close"
+              />
+            </span>
+          }
+          confirmLoading={false}
+          destroyOnClose={false}
+          footer={null}
+          key="dialog"
+          keyboard={true}
+          mask={true}
+          maskClosable={true}
+          maskTransitionName="fade"
+          okButtonDisabled={false}
+          okType="primary"
+          onCancel={[Function]}
+          onClose={[Function]}
+          prefixCls="ant-modal"
+          title="Online Feedback"
+          transitionName="zoom"
+          visible={true}
+          width={520}
+          wrapClassName=""
+        >
+          <div>
+            <Animate
+              animation={Object {}}
+              component=""
+              componentProps={Object {}}
+              key="mask"
+              onAppear={[Function]}
+              onEnd={[Function]}
+              onEnter={[Function]}
+              onLeave={[Function]}
+              showProp="visible"
+              transitionAppear={true}
+              transitionEnter={true}
+              transitionLeave={true}
+              transitionName="fade"
+            >
+              <AnimateChild
+                animation={Object {}}
+                key="mask"
+                transitionAppear={true}
+                transitionEnter={true}
+                transitionLeave={true}
+                transitionName="fade"
+              >
+                <LazyRenderBox
+                  className="ant-modal-mask"
+                  hiddenClassName="ant-modal-mask-hidden"
+                  key="mask"
+                  style={Object {}}
+                  visible={true}
+                >
+                  <div
+                    className="ant-modal-mask"
+                    style={Object {}}
+                  />
+                </LazyRenderBox>
+              </AnimateChild>
+            </Animate>
+            <div
+              aria-labelledby="rcDialogTitle1"
+              className="ant-modal-wrap "
+              onClick={[Function]}
+              onKeyDown={[Function]}
+              role="dialog"
+              style={
+                Object {
+                  "display": null,
+                }
+              }
+              tabIndex={-1}
+            >
+              <Animate
+                animation={Object {}}
+                component=""
+                componentProps={Object {}}
+                key="dialog"
+                onAppear={[Function]}
+                onEnd={[Function]}
+                onEnter={[Function]}
+                onLeave={[Function]}
+                showProp="visible"
+                transitionAppear={true}
+                transitionEnter={true}
+                transitionLeave={true}
+                transitionName="zoom"
+              >
+                <AnimateChild
+                  animation={Object {}}
+                  key="dialog-element"
+                  transitionAppear={true}
+                  transitionEnter={true}
+                  transitionLeave={true}
+                  transitionName="zoom"
+                >
+                  <LazyRenderBox
+                    className="ant-modal "
+                    key="dialog-element"
+                    role="document"
+                    style={
+                      Object {
+                        "width": 520,
+                      }
+                    }
+                    visible={true}
+                  >
+                    <div
+                      className="ant-modal "
+                      role="document"
+                      style={
+                        Object {
+                          "width": 520,
+                        }
+                      }
+                    >
+                      <div
+                        style={
+                          Object {
+                            "height": 0,
+                            "overflow": "hidden",
+                            "width": 0,
+                          }
+                        }
+                        tabIndex={0}
+                      >
+                        sentinelStart
+                      </div>
+                      <div
+                        className="ant-modal-content"
+                      >
+                        <button
+                          aria-label="Close"
+                          className="ant-modal-close"
+                          onClick={[Function]}
+                        >
+                          <span
+                            className="ant-modal-close-x"
+                          >
+                            <Icon
+                              className="ant-modal-close-icon"
+                              type="close"
+                            >
+                              <i
+                                className="anticon anticon-close ant-modal-close-icon"
+                              >
+                                <IconReact
+                                  className=""
+                                  type="close-o"
+                                >
+                                  <svg
+                                    aria-hidden="true"
+                                    className=""
+                                    data-icon="close"
+                                    fill="currentColor"
+                                    focusable="false"
+                                    height="1em"
+                                    key="svg-close"
+                                    viewBox="64 64 896 896"
+                                    width="1em"
+                                  >
+                                    <path
+                                      d="M563.8 512l262.5-312.9c4.4-5.2.7-13.1-6.1-13.1h-79.8c-4.7 0-9.2 2.1-12.3 5.7L511.6 449.8 295.1 191.7c-3-3.6-7.5-5.7-12.3-5.7H203c-6.8 0-10.5 7.9-6.1 13.1L459.4 512 196.9 824.9A7.95 7.95 0 0 0 203 838h79.8c4.7 0 9.2-2.1 12.3-5.7l216.5-258.1 216.5 258.1c3 3.6 7.5 5.7 12.3 5.7h79.8c6.8 0 10.5-7.9 6.1-13.1L563.8 512z"
+                                      key="svg-close-svg-0"
+                                    />
+                                  </svg>
+                                </IconReact>
+                              </i>
+                            </Icon>
+                          </span>
+                        </button>
+                        <div
+                          className="ant-modal-header"
+                        >
+                          <div
+                            className="ant-modal-title"
+                            id="rcDialogTitle1"
+                          >
+                            Online Feedback
+                          </div>
+                        </div>
+                        <div
+                          className="ant-modal-body"
+                        >
+                          <Spin
+                            prefixCls="ant-spin"
+                            size="large"
+                            spinning={false}
+                            wrapperClassName=""
+                          >
+                            <Animate
+                              animation={Object {}}
+                              className="ant-spin-nested-loading"
+                              component="div"
+                              componentProps={Object {}}
+                              onAppear={[Function]}
+                              onEnd={[Function]}
+                              onEnter={[Function]}
+                              onLeave={[Function]}
+                              style={null}
+                              transitionAppear={false}
+                              transitionEnter={true}
+                              transitionLeave={true}
+                              transitionName="fade"
+                            >
+                              <div
+                                className="ant-spin-nested-loading"
+                                style={null}
+                              >
+                                <AnimateChild
+                                  animation={Object {}}
+                                  key="container"
+                                  transitionAppear={false}
+                                  transitionEnter={true}
+                                  transitionLeave={true}
+                                  transitionName="fade"
+                                >
+                                  <div
+                                    className="ant-spin-container"
+                                    key="container"
+                                  >
+                                    <div
+                                      style={
+                                        Object {
+                                          "alignItems": "center",
+                                          "display": "flex",
+                                          "flexDirection": "column",
+                                          "justifyContent": "center",
+                                        }
+                                      }
+                                    >
+                                      <Progress
+                                        percent={100}
+                                        prefixCls="ant-progress"
+                                        showInfo={true}
+                                        size="default"
+                                        status="success"
+                                        trailColor="#f3f3f3"
+                                        type="circle"
+                                      >
+                                        <div
+                                          className="ant-progress ant-progress-circle ant-progress-status-success ant-progress-show-info ant-progress-default"
+                                        >
+                                          <div
+                                            className="ant-progress-inner"
+                                            style={
+                                              Object {
+                                                "fontSize": 24,
+                                                "height": 120,
+                                                "width": 120,
+                                              }
+                                            }
+                                          >
+                                            <Progress
+                                              className=""
+                                              gapDegree={false}
+                                              gapPosition="top"
+                                              percent={100}
+                                              prefixCls="ant-progress"
+                                              strokeColor="#87d068"
+                                              strokeLinecap="round"
+                                              strokeWidth={6}
+                                              style={Object {}}
+                                              trailColor="#f3f3f3"
+                                              trailWidth={6}
+                                            >
+                                              <svg
+                                                className="ant-progress-circle "
+                                                style={Object {}}
+                                                viewBox="0 0 100 100"
+                                              >
+                                                <path
+                                                  className="ant-progress-circle-trail"
+                                                  d="M 50,50 m 0,-47
+     a 47,47 0 1 1 0,94
+     a 47,47 0 1 1 0,-94"
+                                                  fillOpacity="0"
+                                                  stroke="#f3f3f3"
+                                                  strokeLinecap="round"
+                                                  strokeWidth={6}
+                                                  style={
+                                                    Object {
+                                                      "strokeDasharray": "295.3097094374406px 295.3097094374406px",
+                                                      "strokeDashoffset": "-0px",
+                                                      "transition": "stroke-dashoffset .3s ease 0s, stroke-dasharray .3s ease 0s, stroke .3s",
+                                                    }
+                                                  }
+                                                />
+                                                <path
+                                                  className="ant-progress-circle-path"
+                                                  d="M 50,50 m 0,-47
+     a 47,47 0 1 1 0,94
+     a 47,47 0 1 1 0,-94"
+                                                  fillOpacity="0"
+                                                  strokeLinecap="round"
+                                                  strokeWidth={6}
+                                                  style={
+                                                    Object {
+                                                      "stroke": "#87d068",
+                                                      "strokeDasharray": "295.3097094374406px 295.3097094374406px",
+                                                      "strokeDashoffset": "-0px",
+                                                      "transition": "stroke-dashoffset .3s ease 0s, stroke-dasharray .3s ease 0s, stroke .3s, stroke-width .06s ease .3s",
+                                                    }
+                                                  }
+                                                />
+                                              </svg>
+                                            </Progress>
+                                            <span
+                                              className="ant-progress-text"
+                                            >
+                                              <Icon
+                                                theme="outlined"
+                                                type="check"
+                                              >
+                                                <i
+                                                  className="anticon anticon-check"
+                                                >
+                                                  <IconReact
+                                                    className=""
+                                                    type="check-o"
+                                                  >
+                                                    <svg
+                                                      aria-hidden="true"
+                                                      className=""
+                                                      data-icon="check"
+                                                      fill="currentColor"
+                                                      focusable="false"
+                                                      height="1em"
+                                                      key="svg-check"
+                                                      viewBox="64 64 896 896"
+                                                      width="1em"
+                                                    >
+                                                      <path
+                                                        d="M912 190h-69.9c-9.8 0-19.1 4.5-25.1 12.2L404.7 724.5 207 474a32 32 0 0 0-25.1-12.2H112c-6.7 0-10.4 7.7-6.3 12.9l273.9 347c12.8 16.2 37.4 16.2 50.3 0l488.4-618.9c4.1-5.1.4-12.8-6.3-12.8z"
+                                                        key="svg-check-svg-0"
+                                                      />
+                                                    </svg>
+                                                  </IconReact>
+                                                </i>
+                                              </Icon>
+                                            </span>
+                                          </div>
+                                        </div>
+                                      </Progress>
+                                      <div>
+                                        Thank you for your feedback!
+                                      </div>
+                                    </div>
+                                  </div>
+                                </AnimateChild>
+                              </div>
+                            </Animate>
+                          </Spin>
+                        </div>
+                      </div>
+                      <div
+                        style={
+                          Object {
+                            "height": 0,
+                            "overflow": "hidden",
+                            "width": 0,
+                          }
+                        }
+                        tabIndex={0}
+                      >
+                        sentinelEnd
+                      </div>
+                    </div>
+                  </LazyRenderBox>
+                </AnimateChild>
+              </Animate>
+            </div>
+          </div>
+        </Dialog>
+      </Portal>
+    </DialogWrap>
+  </Modal>
+</Component>
+`;

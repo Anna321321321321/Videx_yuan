@@ -1,0 +1,20 @@
+@import '../../../style/index';
+
+.#{$videx-prefix}-annotation-picker-tag-icons {
+  text-align: left;
+}
+
+.#{$videx-prefix}-annotation-picker-tag-icons:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.#{$videx-prefix}-selectedTag:hover {
+  cursor: pointer;
+}
+
+.annotation-close {
+  &:hover {
+    color: 'blue!important';
+  }
+}

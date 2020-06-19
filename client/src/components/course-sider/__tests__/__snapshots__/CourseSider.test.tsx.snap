@@ -1,0 +1,166 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CourseSider Unit Tests Render view of student 1`] = `
+<Sider
+  breakpoint="md"
+  collapsedWidth={0}
+  collapsible={false}
+  defaultCollapsed={false}
+  prefixCls="ant-layout-sider"
+  reverseArrow={false}
+  style={
+    Object {
+      "background": "#fff",
+    }
+  }
+  theme="dark"
+  width={300}
+>
+  <Menu
+    className=""
+    defaultOpenKeys={
+      Array [
+        "manage",
+        "courses",
+      ]
+    }
+    focusable={false}
+    inlineIndent={12}
+    mode="inline"
+    prefixCls="ant-menu"
+    style={
+      Object {
+        "borderRight": 0,
+        "height": "100%",
+      }
+    }
+    theme="light"
+  >
+    <SubMenu
+      key="courses"
+      title={
+        <span>
+          <Icon
+            type="book"
+          />
+          Courses
+        </span>
+      }
+    >
+      <MenuItem
+        key="0"
+      >
+        <Link
+          onClick={[Function]}
+          onlyActiveOnIndex={false}
+          style={
+            Object {
+              "overflow": "hidden",
+              "textOverflow": "ellipsis",
+            }
+          }
+          to="/course/1"
+        >
+          test1
+        </Link>
+      </MenuItem>
+    </SubMenu>
+  </Menu>
+</Sider>
+`;
+
+exports[`CourseSider Unit Tests Render view of teacher 1`] = `
+<Sider
+  breakpoint="md"
+  collapsedWidth={0}
+  collapsible={false}
+  defaultCollapsed={false}
+  prefixCls="ant-layout-sider"
+  reverseArrow={false}
+  style={
+    Object {
+      "background": "#fff",
+    }
+  }
+  theme="dark"
+  width={300}
+>
+  <Menu
+    className=""
+    defaultOpenKeys={
+      Array [
+        "manage",
+        "courses",
+      ]
+    }
+    focusable={false}
+    inlineIndent={12}
+    mode="inline"
+    prefixCls="ant-menu"
+    style={
+      Object {
+        "borderRight": 0,
+        "height": "100%",
+      }
+    }
+    theme="light"
+  >
+    <SubMenu
+      key="manage"
+      title={
+        <span>
+          <Icon
+            type="solution"
+          />
+          Manage
+        </span>
+      }
+    >
+      <MenuItem
+        key="create"
+      >
+        <Link
+          onClick={[Function]}
+          onlyActiveOnIndex={false}
+          style={Object {}}
+          to="course/create"
+        >
+          <Icon
+            type="file-add"
+          />
+          New Course
+        </Link>
+      </MenuItem>
+    </SubMenu>
+    <SubMenu
+      key="courses"
+      title={
+        <span>
+          <Icon
+            type="book"
+          />
+          Courses
+        </span>
+      }
+    >
+      <MenuItem
+        key="0"
+      >
+        <Link
+          onClick={[Function]}
+          onlyActiveOnIndex={false}
+          style={
+            Object {
+              "overflow": "hidden",
+              "textOverflow": "ellipsis",
+            }
+          }
+          to="/course/1"
+        >
+          test1
+        </Link>
+      </MenuItem>
+    </SubMenu>
+  </Menu>
+</Sider>
+`;

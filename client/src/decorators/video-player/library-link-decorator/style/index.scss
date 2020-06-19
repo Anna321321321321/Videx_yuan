@@ -1,0 +1,16 @@
+@import '../../../../style/index';
+
+.#{$videx-prefix}-video-player-library-link {
+  display: block;
+  position: absolute;
+  z-index: 5;
+  bottom: 0;
+  margin-right: 25px;
+  right: 0;
+  font-size: 20px;
+  margin-bottom: 110px;
+}
+
+.#{$videx-prefix}-remove-library-link {
+  display: none;
+}

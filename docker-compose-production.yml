@@ -1,0 +1,43 @@
+version: '3.4'
+
+services:
+  node:
+    image: ubcvidex.azurecr.io/videx-production-node:latest
+    volumes:
+      - /var/www/videxubc:/app/cert/certbot
+      - /etc/letsencrypt/archive:/app/cert/ssl/archive
+      - /etc/letsencrypt/live:/app/cert/ssl/live
+    ports:
+      - '80:8080'
+      - '443:8081'
+    links:
+      - mongodb
+      - redis
+    container_name: videx-production-node
+    command: yarn run server
+    env_file:
+      - variables.env
+
+  mongodb:
+    image: mongo:3.6.3
+    env_file:
+      - variables.env
+    volumes:
+      - /datadisk/mongodb:/data/db
+    ports:
+      - '27017:27017'
+    container_name: videx-production-mongodb
+
+  redis:
+    image: ubcvidex.azurecr.io/videx-production-redis:latest
+    env_file:
+      - variables.env
+    volumes:
+      - /datadisk/redis:/data
+    ports:
+      - '6379:6379'
+    container_name: videx-production-redis
+
+  jsreport:
+    image: ubcvidex.azurecr.io/videx-production-jsreport:latest
+    container_name: videx-production-jsreport

@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OnlineFeedback Unit Tests display modal 1`] = `
+<React.Fragment>
+  <Icon
+    as="i"
+    color="yellow"
+    name="smile"
+  />
+  <a
+    onClick={[Function]}
+  >
+    Online Feedback
+  </a>
+  <withState(withState(withHandlers(Component)))
+    onCancel={[Function]}
+    visible={true}
+  />
+</React.Fragment>
+`;
+
+exports[`OnlineFeedback Unit Tests hidden modal 1`] = `
+<React.Fragment>
+  <Icon
+    as="i"
+    color="yellow"
+    name="smile"
+  />
+  <a
+    onClick={[Function]}
+  >
+    Online Feedback
+  </a>
+  <withState(withState(withHandlers(Component)))
+    onCancel={[Function]}
+    visible={false}
+  />
+</React.Fragment>
+`;

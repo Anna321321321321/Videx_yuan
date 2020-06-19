@@ -1,0 +1,507 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Connected CourseLibrary Container Unit Tests Full Render with Redux Store Check DEINIT action on dispatching 1`] = `
+<Provider
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <Connect(CourseLibraryContainer)>
+    <CourseLibraryContainer
+      courses={Array []}
+      deinit={[Function]}
+      init={[Function]}
+      initialized={false}
+      metadata={
+        Object {
+          "adminAccess": false,
+        }
+      }
+    >
+      <Adapter
+        style={
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+            "justifyContent": "center",
+          }
+        }
+      >
+        <BasicLayout
+          prefixCls="ant-layout"
+          style={
+            Object {
+              "alignItems": "center",
+              "display": "flex",
+              "justifyContent": "center",
+            }
+          }
+        >
+          <div
+            className="ant-layout"
+            style={
+              Object {
+                "alignItems": "center",
+                "display": "flex",
+                "justifyContent": "center",
+              }
+            }
+          >
+            <Spin
+              prefixCls="ant-spin"
+              size="large"
+              spinning={true}
+              wrapperClassName=""
+            >
+              <div
+                className="ant-spin ant-spin-lg ant-spin-spinning"
+              >
+                <span
+                  className="ant-spin-dot ant-spin-dot-spin"
+                >
+                  <i />
+                  <i />
+                  <i />
+                  <i />
+                </span>
+              </div>
+            </Spin>
+          </div>
+        </BasicLayout>
+      </Adapter>
+    </CourseLibraryContainer>
+  </Connect(CourseLibraryContainer)>
+</Provider>
+`;
+
+exports[`Connected CourseLibrary Container Unit Tests Full Render with Redux Store Check INIT action on dispatching 1`] = `
+<Provider
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <Connect(CourseLibraryContainer)>
+    <CourseLibraryContainer
+      courses={Array []}
+      deinit={[Function]}
+      init={[Function]}
+      initialized={false}
+      metadata={
+        Object {
+          "adminAccess": false,
+        }
+      }
+    >
+      <Adapter
+        style={
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+            "justifyContent": "center",
+          }
+        }
+      >
+        <BasicLayout
+          prefixCls="ant-layout"
+          style={
+            Object {
+              "alignItems": "center",
+              "display": "flex",
+              "justifyContent": "center",
+            }
+          }
+        >
+          <div
+            className="ant-layout"
+            style={
+              Object {
+                "alignItems": "center",
+                "display": "flex",
+                "justifyContent": "center",
+              }
+            }
+          >
+            <Spin
+              prefixCls="ant-spin"
+              size="large"
+              spinning={true}
+              wrapperClassName=""
+            >
+              <div
+                className="ant-spin ant-spin-lg ant-spin-spinning"
+              >
+                <span
+                  className="ant-spin-dot ant-spin-dot-spin"
+                >
+                  <i />
+                  <i />
+                  <i />
+                  <i />
+                </span>
+              </div>
+            </Spin>
+          </div>
+        </BasicLayout>
+      </Adapter>
+    </CourseLibraryContainer>
+  </Connect(CourseLibraryContainer)>
+</Provider>
+`;
+
+exports[`Connected CourseLibrary Container Unit Tests Full Render with Redux Store Check props matches with init state 1`] = `
+<Provider
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <Connect(CourseLibraryContainer)>
+    <CourseLibraryContainer
+      courses={Array []}
+      deinit={[Function]}
+      init={[Function]}
+      initialized={false}
+      metadata={
+        Object {
+          "adminAccess": false,
+        }
+      }
+    >
+      <Adapter
+        style={
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+            "justifyContent": "center",
+          }
+        }
+      >
+        <BasicLayout
+          prefixCls="ant-layout"
+          style={
+            Object {
+              "alignItems": "center",
+              "display": "flex",
+              "justifyContent": "center",
+            }
+          }
+        >
+          <div
+            className="ant-layout"
+            style={
+              Object {
+                "alignItems": "center",
+                "display": "flex",
+                "justifyContent": "center",
+              }
+            }
+          >
+            <Spin
+              prefixCls="ant-spin"
+              size="large"
+              spinning={true}
+              wrapperClassName=""
+            >
+              <div
+                className="ant-spin ant-spin-lg ant-spin-spinning"
+              >
+                <span
+                  className="ant-spin-dot ant-spin-dot-spin"
+                >
+                  <i />
+                  <i />
+                  <i />
+                  <i />
+                </span>
+              </div>
+            </Spin>
+          </div>
+        </BasicLayout>
+      </Adapter>
+    </CourseLibraryContainer>
+  </Connect(CourseLibraryContainer)>
+</Provider>
+`;
+
+exports[`Connected CourseLibrary Container Unit Tests Full Render with Redux Store Render connected component 1`] = `
+<Provider
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <Connect(CourseLibraryContainer)>
+    <CourseLibraryContainer
+      courses={Array []}
+      deinit={[Function]}
+      init={[Function]}
+      initialized={false}
+      metadata={
+        Object {
+          "adminAccess": false,
+        }
+      }
+    >
+      <Adapter
+        style={
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+            "justifyContent": "center",
+          }
+        }
+      >
+        <BasicLayout
+          prefixCls="ant-layout"
+          style={
+            Object {
+              "alignItems": "center",
+              "display": "flex",
+              "justifyContent": "center",
+            }
+          }
+        >
+          <div
+            className="ant-layout"
+            style={
+              Object {
+                "alignItems": "center",
+                "display": "flex",
+                "justifyContent": "center",
+              }
+            }
+          >
+            <Spin
+              prefixCls="ant-spin"
+              size="large"
+              spinning={true}
+              wrapperClassName=""
+            >
+              <div
+                className="ant-spin ant-spin-lg ant-spin-spinning"
+              >
+                <span
+                  className="ant-spin-dot ant-spin-dot-spin"
+                >
+                  <i />
+                  <i />
+                  <i />
+                  <i />
+                </span>
+              </div>
+            </Spin>
+          </div>
+        </BasicLayout>
+      </Adapter>
+    </CourseLibraryContainer>
+  </Connect(CourseLibraryContainer)>
+</Provider>
+`;
+
+exports[`Connected CourseLibrary Container Unit Tests with Redux Store Check props matches with init state 1`] = `
+<CourseLibraryContainer
+  courses={Array []}
+  deinit={[Function]}
+  init={[Function]}
+  initialized={false}
+  metadata={
+    Object {
+      "adminAccess": false,
+    }
+  }
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+  storeSubscription={
+    Subscription {
+      "listeners": Object {
+        "clear": [Function],
+        "get": [Function],
+        "notify": [Function],
+        "subscribe": [Function],
+      },
+      "onStateChange": [Function],
+      "parentSub": undefined,
+      "store": Object {
+        "clearActions": [Function],
+        "dispatch": [Function],
+        "getActions": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+      },
+      "unsubscribe": [Function],
+    }
+  }
+/>
+`;
+
+exports[`Connected CourseLibrary Container Unit Tests with Redux Store Render connected component 1`] = `
+<CourseLibraryContainer
+  courses={Array []}
+  deinit={[Function]}
+  init={[Function]}
+  initialized={false}
+  metadata={
+    Object {
+      "adminAccess": false,
+    }
+  }
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+  storeSubscription={
+    Subscription {
+      "listeners": Object {
+        "clear": [Function],
+        "get": [Function],
+        "notify": [Function],
+        "subscribe": [Function],
+      },
+      "onStateChange": [Function],
+      "parentSub": undefined,
+      "store": Object {
+        "clearActions": [Function],
+        "dispatch": [Function],
+        "getActions": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+      },
+      "unsubscribe": [Function],
+    }
+  }
+/>
+`;
+
+exports[`Course Library Container Unit Tests Mount & Unmount component 1`] = `
+<Adapter
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "justifyContent": "center",
+    }
+  }
+>
+  <Spin
+    prefixCls="ant-spin"
+    size="large"
+    spinning={true}
+    wrapperClassName=""
+  />
+</Adapter>
+`;
+
+exports[`Course Library Container Unit Tests Render initialized component 1`] = `
+<Adapter
+  className="ant-layout-has-sider"
+>
+  <CourseSider
+    adminAccess={true}
+    courses={
+      Array [
+        Object {
+          "id": "1",
+          "metadata": Object {
+            "ownerAccess": true,
+            "token": "test",
+          },
+          "name": "test1",
+        },
+      ]
+    }
+  />
+  <Adapter
+    style={
+      Object {
+        "padding": "0 24px",
+      }
+    }
+  >
+    <Adapter
+      style={
+        Object {
+          "margin": 0,
+          "minHeight": 280,
+          "paddingBottom": 24,
+          "paddingLeft": 24,
+          "paddingRight": 24,
+        }
+      }
+    >
+      <CourseCard
+        id="1"
+        key="0"
+        metadata={
+          Object {
+            "ownerAccess": true,
+            "token": "test",
+          }
+        }
+        name="test1"
+        onDeleteCallback={[Function]}
+      />
+    </Adapter>
+  </Adapter>
+</Adapter>
+`;
+
+exports[`Course Library Container Unit Tests Render uninitialized component 1`] = `
+<Adapter
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "justifyContent": "center",
+    }
+  }
+>
+  <Spin
+    prefixCls="ant-spin"
+    size="large"
+    spinning={true}
+    wrapperClassName=""
+  />
+</Adapter>
+`;

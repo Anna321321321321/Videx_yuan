@@ -1,0 +1,19 @@
+{
+  "shortid": "BkuQ5CbJX",
+  "name": "annotation-template",
+  "recipe": "chrome-pdf",
+  "engine": "handlebars",
+  "chrome": {
+    "printBackground": true,
+    "displayHeaderFooter": false,
+    "marginTop": "2.54cm",
+    "marginRight": "2.54cm",
+    "marginBottom": "2.54cm",
+    "marginLeft": "2.54cm"
+  },
+  "modificationDate": {
+    "$$date": 1533664015238
+  },
+  "_id": "wb3uK2Nh4bfbmI6D",
+  "$entitySet": "templates"
+}

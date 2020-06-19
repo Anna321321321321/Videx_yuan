@@ -1,0 +1,15 @@
+@import '../../../style/index';
+
+.#{$videx-prefix}-active-video-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.#{$videx-prefix}-filmstrip {
+  will-change: transform;
+}
+
+.#{$videx-prefix}-transcript {
+  will-change: transform;
+}

@@ -1,0 +1,6 @@
+FROM jsreport/jsreport
+
+# File Author / Maintainer
+MAINTAINER UBC / Microsoft
+
+ADD ./jsreport /jsreport

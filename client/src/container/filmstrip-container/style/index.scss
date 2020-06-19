@@ -1,0 +1,31 @@
+@import '../../../style/index';
+
+.#{$videx-prefix}-filmstrip-container {
+  position: relative;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.#{$videx-prefix}-filmstrip-display {
+  position: absolute;
+  right: 0;
+  // a magic number, should be adjust if command bar height is changed
+  bottom: 0;
+  left: 0;
+  margin-bottom: 24px;
+  z-index: 10;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.#{$videx-prefix}-context-menu {
+  position: absolute;
+  z-index: 99;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #fff;
+  display: block;
+  width: 220px;
+}

@@ -1,0 +1,28 @@
+@import '../../../style/index';
+
+.#{$videx-prefix}-playback-skip-container-button-group {
+  vertical-align: middle !important;
+}
+
+.#{$videx-prefix}-playback-skip-container-button-group button {
+  background-color: rgba(48, 56, 62, 0.99) !important;
+  background: none !important;
+}
+
+.#{$videx-prefix}-playback-skip-container-button-group > button:hover {
+  background: transparent !important;
+  background-color: rgba(48, 56, 62, 0.99) !important;
+}
+
+.#{$videx-prefix}-playback-skip-container-button-group button i {
+  color: white !important;
+  margin: auto !important;
+  text-align: center !important;
+}
+
+.#{$videx-prefix}-playback-skip-container-button-group button div {
+  color: white !important;
+  font-size: 10px;
+  text-align: center;
+  margin: auto !important;
+}

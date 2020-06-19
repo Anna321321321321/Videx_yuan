@@ -1,0 +1,27 @@
+{
+  "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json"],
+  "moduleNameMapper": {
+    "videx/api": "<rootDir>/videx/api",
+    "videx/client/logger": "<rootDir>/client/src/system/logger",
+    "videx/client/core/transcript": "<rootDir>/client/src/core/transcript",
+    "videx/client/core/version": "<rootDir>/client/src/core/version",
+    "videx/client/core/color": "<rootDir>/client/src/core/color"
+  },
+  "setupFiles": [
+    "<rootDir>/client/jest/bootstrap/disableAppInsights.js",
+    "<rootDir>/client/jest/bootstrap/localStorageMock.js"
+  ],
+  "setupTestFrameworkScriptFile":
+    "<rootDir>/client/jest/bootstrap/testFrameworkScriptFile.ts",
+  "transform": {
+    "\\.(ts|tsx)$": "<rootDir>/node_modules/ts-jest/preprocessor.js",
+    "\\.(css|scss)$": "<rootDir>/client/jest/bootstrap/styleMock.js"
+  },
+  "testMatch": ["<rootDir>/client/**/__tests__/*.(ts|tsx|js)"],
+  "snapshotSerializers": ["enzyme-to-json/serializer"],
+  "globals": {
+    "ts-jest": {
+      "tsConfigFile": "./client/jest/tsconfig.test.json"
+    }
+  }
+}

@@ -1,0 +1,77 @@
+@import 'themes/default';
+
+/*
+button,
+input,
+.ant-input,
+.ant-select-selection,
+.label,
+.menu,
+.vjs-control-bar,
+.ant-tag,
+.segment {
+  border-radius: 0 !important;
+}
+
+.ant-card:hover {
+  background-color: rgb(243, 243, 243) !important;
+}
+
+.ant-card {
+  -webkit-box-shadow: 18px 18px 36px -1px rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 18px 18px 36px -1px rgba(0, 0, 0, 0.19);
+  box-shadow: 18px 18px 36px -1px rgba(0, 0, 0, 0.19);
+}
+
+.ant-tooltip-inner {
+  background-color: #ccc !important;
+  border-radius: 0 !important;
+  color: black;
+  -webkit-box-shadow: 18px 18px 36px -1px rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 18px 18px 36px -1px rgba(0, 0, 0, 0.19);
+  box-shadow: 18px 18px 36px -1px rgba(0, 0, 0, 0.19);
+}
+*/
+
+.vjs-control-bar {
+  background-color: rgba(0, 0, 0, 0.3) !important;
+  height: auto !important;
+}
+
+.vjs-current-time-display {
+  font-size: 14px !important;
+}
+
+.vjs-duration-display {
+  font-size: 14px !important;
+}
+
+.amp-tooltip-time {
+  font-size: 14px !important;
+}
+
+.amp-quality-control {
+  display: none !important;
+}
+
+.videx-hover {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.vjs-progress-holder {
+  z-index: 10 !important;
+}
+
+.ant-tag {
+  border-radius: 0 !important;
+}
+
+.ant-tabs-vertical > .ant-tabs-bar .ant-tabs-nav {
+  width: 200px !important;
+}
+
+.ant-tabs-vertical.ant-tabs-left > .ant-tabs-bar .ant-tabs-tab {
+  white-space: normal !important;
+}

@@ -1,0 +1,9 @@
+@import '../../../style/index';
+
+.#{$videx-prefix}-home-footer {
+  float: right;
+}
+
+.#{$videx-prefix}-home-footer span {
+  margin: 10px;
+}

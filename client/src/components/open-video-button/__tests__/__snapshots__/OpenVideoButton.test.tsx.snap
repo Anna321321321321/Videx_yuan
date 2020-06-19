@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OpenVideoButton Unit Tests When active button clicked, will open course video 1`] = `
+<Component
+  courseId="courseId"
+  end={100}
+  lessonId="lessonId"
+  start={0}
+>
+  <Button
+    block={false}
+    ghost={false}
+    loading={false}
+    onClick={[Function]}
+    prefixCls="ant-btn"
+    style={
+      Object {
+        "marginLeft": -105,
+        "marginTop": -5,
+      }
+    }
+  >
+    <Wave>
+      <button
+        className="ant-btn"
+        onClick={[Function]}
+        style={
+          Object {
+            "marginLeft": -105,
+            "marginTop": -5,
+          }
+        }
+        type="button"
+      >
+        <span
+          key=".0"
+        >
+          Open Video
+        </span>
+      </button>
+    </Wave>
+  </Button>
+</Component>
+`;

@@ -1,0 +1,27 @@
+@import '../../../style/index';
+
+.#{$videx-prefix}-transcript-tag {
+  position: absolute !important;
+  top: 0px !important;
+  right: 30px !important;
+}
+
+.#{$videx-prefix}-transcript-note {
+  white-space: nowrap;
+  font-size: smaller;
+  text-overflow: ellipsis;
+  display: block;
+  overflow: hidden;
+  padding: 3px;
+}
+
+.#{$videx-prefix}-transcript-annotation-box {
+  position: relative;
+  border: 1px solid #d8d8d8;
+}
+
+.#{$videx-prefix}-annotation-icon-share {
+  position: absolute;
+  left: -5px;
+  top: -10px;
+}

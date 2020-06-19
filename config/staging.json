@@ -1,0 +1,6 @@
+{
+  "SERVER": {
+    "URL": "https://videxdev.canadaeast.cloudapp.azure.com",
+    "CERTIFICATION_PATH": "videxdev.canadaeast.cloudapp.azure.com"
+  }
+}

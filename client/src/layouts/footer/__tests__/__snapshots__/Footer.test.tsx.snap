@@ -1,0 +1,228 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer Unit Tests Render footer 1`] = `
+<Component>
+  <Adapter
+    style={
+      Object {
+        "background": "#fff",
+        "marginTop": "24px",
+        "transition": "opacity 0.5s",
+      }
+    }
+  >
+    <Basic
+      prefixCls="ant-layout-footer"
+      style={
+        Object {
+          "background": "#fff",
+          "marginTop": "24px",
+          "transition": "opacity 0.5s",
+        }
+      }
+    >
+      <div
+        className="ant-layout-footer"
+        style={
+          Object {
+            "background": "#fff",
+            "marginTop": "24px",
+            "transition": "opacity 0.5s",
+          }
+        }
+      >
+        <span>
+          © 
+          2020
+           University of British Columbia and Microsoft Corporation
+        </span>
+        <span
+          className="videx-home-footer"
+        >
+          <span>
+            <withState(Component)>
+              <Component
+                changeVisible={[Function]}
+                visible={false}
+              >
+                <Icon
+                  as="i"
+                  color="yellow"
+                  name="smile"
+                >
+                  <i
+                    aria-hidden="true"
+                    className="yellow smile icon"
+                    onClick={[Function]}
+                  />
+                </Icon>
+                <a
+                  onClick={[Function]}
+                >
+                  Online Feedback
+                </a>
+                <withState(withState(withHandlers(Component)))
+                  onCancel={[Function]}
+                  visible={false}
+                >
+                  <withState(withHandlers(Component))
+                    fields={
+                      Object {
+                        "category": Object {
+                          "value": null,
+                        },
+                        "email": Object {
+                          "value": null,
+                        },
+                        "message": Object {
+                          "value": null,
+                        },
+                        "rate": Object {
+                          "value": null,
+                        },
+                      }
+                    }
+                    onCancel={[Function]}
+                    setFields={[Function]}
+                    visible={false}
+                  >
+                    <withHandlers(Component)
+                      fields={
+                        Object {
+                          "category": Object {
+                            "value": null,
+                          },
+                          "email": Object {
+                            "value": null,
+                          },
+                          "message": Object {
+                            "value": null,
+                          },
+                          "rate": Object {
+                            "value": null,
+                          },
+                        }
+                      }
+                      onCancel={[Function]}
+                      setFields={[Function]}
+                      setStatus={[Function]}
+                      status={null}
+                      visible={false}
+                    >
+                      <Component
+                        fields={
+                          Object {
+                            "category": Object {
+                              "value": null,
+                            },
+                            "email": Object {
+                              "value": null,
+                            },
+                            "message": Object {
+                              "value": null,
+                            },
+                            "rate": Object {
+                              "value": null,
+                            },
+                          }
+                        }
+                        onCancel={[Function]}
+                        onChange={[Function]}
+                        onReset={[Function]}
+                        onSubmit={[Function]}
+                        setFields={[Function]}
+                        setStatus={[Function]}
+                        status={null}
+                        visible={false}
+                      >
+                        <Modal
+                          cancelButtonDisabled={false}
+                          closable={true}
+                          confirmLoading={false}
+                          footer={null}
+                          maskTransitionName="fade"
+                          okButtonDisabled={false}
+                          okType="primary"
+                          onCancel={[Function]}
+                          prefixCls="ant-modal"
+                          title="Online Feedback"
+                          transitionName="zoom"
+                          visible={false}
+                          width={520}
+                        >
+                          <DialogWrap
+                            cancelButtonDisabled={false}
+                            closable={true}
+                            closeIcon={
+                              <span
+                                className="ant-modal-close-x"
+                              >
+                                <Icon
+                                  className="ant-modal-close-icon"
+                                  type="close"
+                                />
+                              </span>
+                            }
+                            confirmLoading={false}
+                            footer={null}
+                            maskTransitionName="fade"
+                            okButtonDisabled={false}
+                            okType="primary"
+                            onCancel={[Function]}
+                            onClose={[Function]}
+                            prefixCls="ant-modal"
+                            title="Online Feedback"
+                            transitionName="zoom"
+                            visible={false}
+                            width={520}
+                            wrapClassName=""
+                          />
+                        </Modal>
+                      </Component>
+                    </withHandlers(Component)>
+                  </withState(withHandlers(Component))>
+                </withState(withState(withHandlers(Component)))>
+              </Component>
+            </withState(Component)>
+          </span>
+          <span>
+            <a
+              href="mailto:videx@ece.ubc.ca"
+            >
+              Support
+            </a>
+          </span>
+          <span>
+            <a
+              href="/terms"
+            >
+              Terms of Use
+            </a>
+          </span>
+          <span>
+            <a
+              href="/consent"
+            >
+              Consent
+            </a>
+          </span>
+          <span>
+            <a
+              href="/faq"
+            >
+              FAQ
+            </a>
+          </span>
+          <span>
+            <a
+              onClick={[Function]}
+            >
+              About
+            </a>
+          </span>
+        </span>
+      </div>
+    </Basic>
+  </Adapter>
+</Component>
+`;

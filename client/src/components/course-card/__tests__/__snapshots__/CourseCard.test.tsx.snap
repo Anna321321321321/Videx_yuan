@@ -1,0 +1,466 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Course Card Unit Tests Render deleted courses 1`] = `
+<CourseCard
+  id="00000000-0000-0001-0000-000000000001"
+  metadata={
+    Object {
+      "ownerAccess": false,
+      "token": null,
+    }
+  }
+  name={null}
+  onDeleteCallback={[MockFunction]}
+>
+  <div
+    style={
+      Object {
+        "marginBottom": "20px",
+        "position": "relative",
+      }
+    }
+  >
+    <Link
+      onClick={[Function]}
+      onlyActiveOnIndex={false}
+      style={Object {}}
+      to="/course/00000000-0000-0001-0000-000000000001"
+    >
+      <a
+        onClick={[Function]}
+        style={Object {}}
+      >
+        <Card
+          bodyStyle={
+            Object {
+              "padding": "15px",
+            }
+          }
+          style={
+            Object {
+              "alignItems": "center",
+              "display": "flex",
+              "height": "100px",
+              "justifyContent": "center",
+            }
+          }
+        >
+          <div
+            className="ant-card ant-card-bordered"
+            style={
+              Object {
+                "alignItems": "center",
+                "display": "flex",
+                "height": "100px",
+                "justifyContent": "center",
+              }
+            }
+          >
+            <div
+              className="ant-card-body"
+              style={
+                Object {
+                  "padding": "15px",
+                }
+              }
+            >
+              <div
+                style={
+                  Object {
+                    "color": "#4183c4",
+                    "fontSize": "21px",
+                    "overflow": "hidden",
+                    "textOverflow": "ellipsis",
+                  }
+                }
+              />
+            </div>
+          </div>
+        </Card>
+      </a>
+    </Link>
+  </div>
+</CourseCard>
+`;
+
+exports[`Course Card Unit Tests Render view of owner or administrator 1`] = `
+<CourseCard
+  id="00000000-0000-0001-0000-000000000001"
+  metadata={
+    Object {
+      "ownerAccess": true,
+      "token": "test",
+    }
+  }
+  name="PHIL101"
+  onDeleteCallback={[MockFunction]}
+>
+  <div
+    style={
+      Object {
+        "marginBottom": "20px",
+        "position": "relative",
+      }
+    }
+  >
+    <Link
+      onClick={[Function]}
+      onlyActiveOnIndex={false}
+      style={Object {}}
+      to="/course/00000000-0000-0001-0000-000000000001"
+    >
+      <a
+        onClick={[Function]}
+        style={Object {}}
+      >
+        <Card
+          bodyStyle={
+            Object {
+              "padding": "15px",
+            }
+          }
+          style={
+            Object {
+              "alignItems": "center",
+              "display": "flex",
+              "height": "100px",
+              "justifyContent": "center",
+            }
+          }
+        >
+          <div
+            className="ant-card ant-card-bordered"
+            style={
+              Object {
+                "alignItems": "center",
+                "display": "flex",
+                "height": "100px",
+                "justifyContent": "center",
+              }
+            }
+          >
+            <div
+              className="ant-card-body"
+              style={
+                Object {
+                  "padding": "15px",
+                }
+              }
+            >
+              <div
+                style={
+                  Object {
+                    "color": "#4183c4",
+                    "fontSize": "21px",
+                    "overflow": "hidden",
+                    "textOverflow": "ellipsis",
+                  }
+                }
+              >
+                PHIL101
+              </div>
+            </div>
+          </div>
+        </Card>
+      </a>
+    </Link>
+    <ButtonGroup
+      size="small"
+      style={
+        Object {
+          "position": "absolute",
+          "right": "0px",
+          "top": "0px",
+        }
+      }
+    >
+      <div
+        className="ant-btn-group ant-btn-group-sm"
+        style={
+          Object {
+            "position": "absolute",
+            "right": "0px",
+            "top": "0px",
+          }
+        }
+      >
+        <Button
+          block={false}
+          ghost={false}
+          loading={false}
+          prefixCls="ant-btn"
+        >
+          <Wave>
+            <button
+              className="ant-btn"
+              onClick={[Function]}
+              type="button"
+            >
+              <Link
+                key=".0"
+                onClick={[Function]}
+                onlyActiveOnIndex={false}
+                style={Object {}}
+                to="/course/00000000-0000-0001-0000-000000000001/edit"
+              >
+                <a
+                  onClick={[Function]}
+                  style={Object {}}
+                >
+                  <Icon
+                    style={
+                      Object {
+                        "marginRight": "8px",
+                      }
+                    }
+                    type="edit"
+                  >
+                    <i
+                      className="anticon anticon-edit"
+                      style={
+                        Object {
+                          "marginRight": "8px",
+                        }
+                      }
+                    >
+                      <IconReact
+                        className=""
+                        type="edit-o"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          className=""
+                          data-icon="edit"
+                          fill="currentColor"
+                          focusable="false"
+                          height="1em"
+                          key="svg-edit"
+                          viewBox="64 64 896 896"
+                          width="1em"
+                        >
+                          <path
+                            d="M257.7 752c2 0 4-.2 6-.5L431.9 722c2-.4 3.9-1.3 5.3-2.8l423.9-423.9a9.96 9.96 0 0 0 0-14.1L694.9 114.9c-1.9-1.9-4.4-2.9-7.1-2.9s-5.2 1-7.1 2.9L256.8 538.8c-1.5 1.5-2.4 3.3-2.8 5.3l-29.5 168.2a33.5 33.5 0 0 0 9.4 29.8c6.6 6.4 14.9 9.9 23.8 9.9zm67.4-174.4L687.8 215l73.3 73.3-362.7 362.6-88.9 15.7 15.6-89zM880 836H144c-17.7 0-32 14.3-32 32v36c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-36c0-17.7-14.3-32-32-32z"
+                            key="svg-edit-svg-0"
+                          />
+                        </svg>
+                      </IconReact>
+                    </i>
+                  </Icon>
+                  Edit
+                </a>
+              </Link>
+            </button>
+          </Wave>
+        </Button>
+        <Button
+          block={false}
+          ghost={false}
+          loading={false}
+          onClick={[Function]}
+          prefixCls="ant-btn"
+        >
+          <Wave>
+            <button
+              className="ant-btn"
+              onClick={[Function]}
+              type="button"
+            >
+              <Icon
+                key=".0"
+                style={
+                  Object {
+                    "marginRight": "8px",
+                  }
+                }
+                type="delete"
+              >
+                <i
+                  className="anticon anticon-delete"
+                  style={
+                    Object {
+                      "marginRight": "8px",
+                    }
+                  }
+                >
+                  <IconReact
+                    className=""
+                    type="delete-o"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className=""
+                      data-icon="delete"
+                      fill="currentColor"
+                      focusable="false"
+                      height="1em"
+                      key="svg-delete"
+                      viewBox="64 64 896 896"
+                      width="1em"
+                    >
+                      <path
+                        d="M360 184h-8c4.4 0 8-3.6 8-8v8h304v-8c0 4.4 3.6 8 8 8h-8v72h72v-80c0-35.3-28.7-64-64-64H352c-35.3 0-64 28.7-64 64v80h72v-72zm504 72H160c-17.7 0-32 14.3-32 32v32c0 4.4 3.6 8 8 8h60.4l24.7 523c1.6 34.1 29.8 61 63.9 61h454c34.2 0 62.3-26.8 63.9-61l24.7-523H888c4.4 0 8-3.6 8-8v-32c0-17.7-14.3-32-32-32zM731.3 840H292.7l-24.2-512h487l-24.2 512z"
+                        key="svg-delete-svg-0"
+                      />
+                    </svg>
+                  </IconReact>
+                </i>
+              </Icon>
+              <span
+                key=".1"
+              >
+                Delete
+              </span>
+            </button>
+          </Wave>
+        </Button>
+        <Button
+          block={false}
+          ghost={false}
+          loading={false}
+          onClick={[Function]}
+          prefixCls="ant-btn"
+        >
+          <Wave>
+            <button
+              className="ant-btn"
+              onClick={[Function]}
+              type="button"
+            >
+              <Icon
+                key=".0"
+                style={
+                  Object {
+                    "marginRight": "8px",
+                  }
+                }
+                type="share-alt"
+              >
+                <i
+                  className="anticon anticon-share-alt"
+                  style={
+                    Object {
+                      "marginRight": "8px",
+                    }
+                  }
+                >
+                  <IconReact
+                    className=""
+                    type="share-alt-o"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className=""
+                      data-icon="share-alt"
+                      fill="currentColor"
+                      focusable="false"
+                      height="1em"
+                      key="svg-share-alt"
+                      viewBox="64 64 896 896"
+                      width="1em"
+                    >
+                      <path
+                        d="M752 664c-28.5 0-54.8 10-75.4 26.7L469.4 540.8a160.68 160.68 0 0 0 0-57.6l207.2-149.9C697.2 350 723.5 360 752 360c66.2 0 120-53.8 120-120s-53.8-120-120-120-120 53.8-120 120c0 11.6 1.6 22.7 4.7 33.3L439.9 415.8C410.7 377.1 364.3 352 312 352c-88.4 0-160 71.6-160 160s71.6 160 160 160c52.3 0 98.7-25.1 127.9-63.8l196.8 142.5c-3.1 10.6-4.7 21.8-4.7 33.3 0 66.2 53.8 120 120 120s120-53.8 120-120-53.8-120-120-120zm0-476c28.7 0 52 23.3 52 52s-23.3 52-52 52-52-23.3-52-52 23.3-52 52-52zM312 600c-48.5 0-88-39.5-88-88s39.5-88 88-88 88 39.5 88 88-39.5 88-88 88zm440 236c-28.7 0-52-23.3-52-52s23.3-52 52-52 52 23.3 52 52-23.3 52-52 52z"
+                        key="svg-share-alt-svg-0"
+                      />
+                    </svg>
+                  </IconReact>
+                </i>
+              </Icon>
+              <span
+                key=".1"
+              >
+                Share
+              </span>
+            </button>
+          </Wave>
+        </Button>
+      </div>
+    </ButtonGroup>
+  </div>
+</CourseCard>
+`;
+
+exports[`Course Card Unit Tests Render view of subscribers 1`] = `
+<CourseCard
+  id="00000000-0000-0001-0000-000000000001"
+  metadata={
+    Object {
+      "ownerAccess": false,
+      "token": null,
+    }
+  }
+  name="PHIL101"
+  onDeleteCallback={[MockFunction]}
+>
+  <div
+    style={
+      Object {
+        "marginBottom": "20px",
+        "position": "relative",
+      }
+    }
+  >
+    <Link
+      onClick={[Function]}
+      onlyActiveOnIndex={false}
+      style={Object {}}
+      to="/course/00000000-0000-0001-0000-000000000001"
+    >
+      <a
+        onClick={[Function]}
+        style={Object {}}
+      >
+        <Card
+          bodyStyle={
+            Object {
+              "padding": "15px",
+            }
+          }
+          style={
+            Object {
+              "alignItems": "center",
+              "display": "flex",
+              "height": "100px",
+              "justifyContent": "center",
+            }
+          }
+        >
+          <div
+            className="ant-card ant-card-bordered"
+            style={
+              Object {
+                "alignItems": "center",
+                "display": "flex",
+                "height": "100px",
+                "justifyContent": "center",
+              }
+            }
+          >
+            <div
+              className="ant-card-body"
+              style={
+                Object {
+                  "padding": "15px",
+                }
+              }
+            >
+              <div
+                style={
+                  Object {
+                    "color": "#4183c4",
+                    "fontSize": "21px",
+                    "overflow": "hidden",
+                    "textOverflow": "ellipsis",
+                  }
+                }
+              >
+                PHIL101
+              </div>
+            </div>
+          </div>
+        </Card>
+      </a>
+    </Link>
+  </div>
+</CourseCard>
+`;

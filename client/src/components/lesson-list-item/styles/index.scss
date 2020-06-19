@@ -1,0 +1,88 @@
+@import '../../../style/index';
+
+.#{$videx-prefix}-lesson-summary {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ant-card-meta-title {
+  white-space: nowrap;
+}
+
+.ant-progress-inner {
+  border-radius: 0;
+  background-color: #cccccc !important;
+}
+
+.ant-progress-bg {
+  border-radius: 0 !important;
+}
+
+.#{$videx-prefix}-lesson-card {
+  margin-bottom: 40px;
+  width: 250px;
+  cursor: 'pointer';
+
+  &:hover .ant-card-body .#{$videx-prefix}-lesson-summary {
+    white-space: normal;
+  }
+
+  &:hover
+    .ant-card-body
+    .ant-card-meta
+    .ant-card-meta-detail
+    .ant-card-meta-title {
+    white-space: normal;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+    z-index: 99;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+}
+
+.#{$videx-prefix}-lesson-card-image {
+  width: 100%;
+  height: 150px;
+}
+
+.#{$videx-prefix}-lesson-detail-image {
+  width: 100%;
+  height: auto;
+}
+
+.#{$videx-prefix}-lesson-card-duration {
+  background-color: #0f0f0f;
+  color: #fff;
+  position: absolute;
+  bottom: 10px;
+  padding: 2px;
+  right: 0px;
+  font-weight: 600;
+}
+
+.#{$videx-prefix}-lesson-detail-duration {
+  background-color: #0f0f0f;
+  color: #fff;
+  position: absolute;
+  padding: 2px;
+  right: 0px;
+  font-weight: 600;
+}
+
+.#{$videx-prefix}-table-progress {
+  .ant-progress-outer {
+    .ant-progress-inner {
+      height: 35px !important;
+      .ant-progress-bg {
+        height: 35px !important;
+      }
+      .ant-progress-success-bg {
+        height: 35px !important;
+        border-radius: 0px !important;
+      }
+    }
+  }
+}

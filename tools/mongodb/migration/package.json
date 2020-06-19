@@ -1,0 +1,27 @@
+{
+  "name": "@videx/db-migration",
+  "description": "ViDeX MongoDB migration script",
+  "version": "3.0.0",
+  "author": "UBC ViDeX",
+  "dependencies": {
+    "mongoose": "5.2.3",
+    "uuid": "3.3.2",
+    "node-fetch": "2.1.2",
+    "azure": "2.3.1-preview"
+  },
+  "devDependencies": {
+    "nodemon": "1.18.2",
+    "babel-cli": "6.26.0",
+    "babel-preset-es2015": "6.24.1",
+    "babel-preset-stage-2": "6.24.1",
+    "eslint": "5.1.0",
+    "eslint-config-airbnb-base": "13.0.0",
+    "eslint-plugin-import": "2.13.0"
+  },
+  "private": true,
+  "repository": "git@github.com:OneNoteDev/ViDeX.git",
+  "scripts": {
+    "dev": "yarn install && nodemon ./src/index.js --watch src --exec babel-node --presets es2015,stage-2",
+    "production": "babel-node ./src/index.js --presets es2015,stage-2"
+  }
+}

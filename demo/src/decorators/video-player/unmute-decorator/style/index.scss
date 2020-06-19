@@ -1,0 +1,12 @@
+@import '../../../../style/index';
+
+##{$videx-prefix}-video-player-unmute-button {
+  display: block;
+  position: absolute;
+  z-index: 5;
+  left: 0;
+  top: 0;
+  font-size: 20px;
+  background-color: transparent;
+  cursor: pointer;
+}

@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`User Component Unit Tests After initialized 1`] = `
+<div>
+  <Persona
+    name="TO"
+  />
+</div>
+`;
+
+exports[`User Component Unit Tests Initialize component 1`] = `""`;

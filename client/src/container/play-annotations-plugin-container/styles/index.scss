@@ -1,0 +1,55 @@
+@import '../../../style/index';
+
+.#{$videx-prefix}-play-annotation-plugin-container {
+  background-color: transparent !important;
+  margin: 0 !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+
+.#{$videx-prefix}-play-annotation-plugin-container i {
+  color: white !important;
+  margin: auto;
+}
+
+.#{$videx-prefix}-play-annotation-plugin-container div {
+  color: white !important;
+  margin: auto;
+  font-size: 10px;
+}
+
+.#{$videx-prefix}-play-annotation-dropdown {
+  position: relative;
+  display: inline-block;
+  z-index: 11;
+}
+
+.#{$videx-prefix}-play-annotation-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(48, 56, 62, 0.99);
+  z-index: 1;
+  bottom: 100%;
+}
+
+.#{$videx-prefix}-play-annotation-color-dropdown-item:hover {
+  cursor: pointer;
+}
+
+.#{$videx-prefix}-play-annotation-dropdown-content
+  > div
+  > div:nth-child(1)
+  > div {
+  padding-left: 5px;
+}
+
+.#{$videx-prefix}-play-annotation-dropdown-content
+  > div
+  > div:last-child
+  > div {
+  padding-right: 5px;
+}
+
+.show {
+  display: block;
+}

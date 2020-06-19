@@ -1,0 +1,803 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ColorPicker Unit Tests simple test 1`] = `
+<Component
+  onChangeComplete={[MockFunction]}
+>
+  <div>
+    <ColorPicker
+      circleSize={20}
+      circleSpacing={14}
+      color={
+        Object {
+          "a": 1,
+          "h": 250,
+          "l": 0.2,
+          "s": 0.5,
+        }
+      }
+      colors={
+        Array [
+          "#e32990",
+          "#fff110",
+          "#4cba35",
+          "#28a3dc",
+          "#9719ff",
+        ]
+      }
+      onChangeComplete={[Function]}
+      width="187px"
+    >
+      <Circle
+        circleSize={20}
+        circleSpacing={14}
+        color={
+          Object {
+            "a": 1,
+            "h": 250,
+            "l": 0.2,
+            "s": 0.5,
+          }
+        }
+        colors={
+          Array [
+            "#e32990",
+            "#fff110",
+            "#4cba35",
+            "#28a3dc",
+            "#9719ff",
+          ]
+        }
+        hex="#22194d"
+        hsl={
+          Object {
+            "a": 1,
+            "h": 249.99999999999994,
+            "l": 0.2,
+            "s": 0.5000000000000001,
+          }
+        }
+        hsv={
+          Object {
+            "a": 1,
+            "h": 249.99999999999994,
+            "s": 0.6666666666666667,
+            "v": 0.30000000000000004,
+          }
+        }
+        oldHue={250}
+        onChange={[Function]}
+        onChangeComplete={[Function]}
+        rgb={
+          Object {
+            "a": 1,
+            "b": 77,
+            "g": 25,
+            "r": 34,
+          }
+        }
+        width="187px"
+      >
+        <div
+          className="circle-picker "
+          style={
+            Object {
+              "display": "flex",
+              "flexWrap": "wrap",
+              "marginBottom": -14,
+              "marginRight": -14,
+              "width": "187px",
+            }
+          }
+        >
+          <Hover
+            active={false}
+            circleSize={20}
+            circleSpacing={14}
+            color="#e32990"
+            key="#e32990"
+            onClick={[Function]}
+          >
+            <span
+              onMouseOut={[Function]}
+              onMouseOver={[Function]}
+            >
+              <CircleSwatch
+                active={false}
+                circleSize={20}
+                circleSpacing={14}
+                color="#e32990"
+                hover={false}
+                onClick={[Function]}
+              >
+                <div
+                  style={
+                    Object {
+                      "MozTransform": "scale(1)",
+                      "MozTransition": "100ms transform ease",
+                      "OTransform": "scale(1)",
+                      "OTransition": "100ms transform ease",
+                      "WebkitTransform": "scale(1)",
+                      "WebkitTransition": "100ms transform ease",
+                      "height": 20,
+                      "marginBottom": 14,
+                      "marginRight": 14,
+                      "msTransform": "scale(1)",
+                      "msTransition": "100ms transform ease",
+                      "transform": "scale(1)",
+                      "transition": "100ms transform ease",
+                      "width": 20,
+                    }
+                  }
+                >
+                  <Focus
+                    color="#e32990"
+                    focusStyle={
+                      Object {
+                        "boxShadow": "inset 0 0 0 10px #e32990, 0 0 5px #e32990",
+                      }
+                    }
+                    onClick={[Function]}
+                    style={
+                      Object {
+                        "MozBorderRadius": "50%",
+                        "MozBoxShadow": "inset 0 0 0 10px #e32990",
+                        "MozTransition": "100ms box-shadow ease",
+                        "OBorderRadius": "50%",
+                        "OBoxShadow": "inset 0 0 0 10px #e32990",
+                        "OTransition": "100ms box-shadow ease",
+                        "WebkitBorderRadius": "50%",
+                        "WebkitBoxShadow": "inset 0 0 0 10px #e32990",
+                        "WebkitTransition": "100ms box-shadow ease",
+                        "background": "transparent",
+                        "borderRadius": "50%",
+                        "boxShadow": "inset 0 0 0 10px #e32990",
+                        "msBorderRadius": "50%",
+                        "msBoxShadow": "inset 0 0 0 10px #e32990",
+                        "msTransition": "100ms box-shadow ease",
+                        "transition": "100ms box-shadow ease",
+                      }
+                    }
+                  >
+                    <span
+                      onBlur={[Function]}
+                      onFocus={[Function]}
+                    >
+                      <Swatch
+                        color="#e32990"
+                        focus={false}
+                        focusStyle={
+                          Object {
+                            "boxShadow": "inset 0 0 0 10px #e32990, 0 0 5px #e32990",
+                          }
+                        }
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "MozBorderRadius": "50%",
+                            "MozBoxShadow": "inset 0 0 0 10px #e32990",
+                            "MozTransition": "100ms box-shadow ease",
+                            "OBorderRadius": "50%",
+                            "OBoxShadow": "inset 0 0 0 10px #e32990",
+                            "OTransition": "100ms box-shadow ease",
+                            "WebkitBorderRadius": "50%",
+                            "WebkitBoxShadow": "inset 0 0 0 10px #e32990",
+                            "WebkitTransition": "100ms box-shadow ease",
+                            "background": "transparent",
+                            "borderRadius": "50%",
+                            "boxShadow": "inset 0 0 0 10px #e32990",
+                            "msBorderRadius": "50%",
+                            "msBoxShadow": "inset 0 0 0 10px #e32990",
+                            "msTransition": "100ms box-shadow ease",
+                            "transition": "100ms box-shadow ease",
+                          }
+                        }
+                      >
+                        <div
+                          onClick={[Function]}
+                          onKeyDown={[Function]}
+                          style={
+                            Object {
+                              "MozBorderRadius": "50%",
+                              "MozBoxShadow": "inset 0 0 0 10px #e32990",
+                              "MozTransition": "100ms box-shadow ease",
+                              "OBorderRadius": "50%",
+                              "OBoxShadow": "inset 0 0 0 10px #e32990",
+                              "OTransition": "100ms box-shadow ease",
+                              "WebkitBorderRadius": "50%",
+                              "WebkitBoxShadow": "inset 0 0 0 10px #e32990",
+                              "WebkitTransition": "100ms box-shadow ease",
+                              "background": "transparent",
+                              "borderRadius": "50%",
+                              "boxShadow": "inset 0 0 0 10px #e32990",
+                              "cursor": "pointer",
+                              "height": "100%",
+                              "msBorderRadius": "50%",
+                              "msBoxShadow": "inset 0 0 0 10px #e32990",
+                              "msTransition": "100ms box-shadow ease",
+                              "outline": "none",
+                              "position": "relative",
+                              "transition": "100ms box-shadow ease",
+                              "width": "100%",
+                            }
+                          }
+                          tabIndex={0}
+                          title="#e32990"
+                        />
+                      </Swatch>
+                    </span>
+                  </Focus>
+                </div>
+              </CircleSwatch>
+            </span>
+          </Hover>
+          <Hover
+            active={false}
+            circleSize={20}
+            circleSpacing={14}
+            color="#fff110"
+            key="#fff110"
+            onClick={[Function]}
+          >
+            <span
+              onMouseOut={[Function]}
+              onMouseOver={[Function]}
+            >
+              <CircleSwatch
+                active={false}
+                circleSize={20}
+                circleSpacing={14}
+                color="#fff110"
+                hover={false}
+                onClick={[Function]}
+              >
+                <div
+                  style={
+                    Object {
+                      "MozTransform": "scale(1)",
+                      "MozTransition": "100ms transform ease",
+                      "OTransform": "scale(1)",
+                      "OTransition": "100ms transform ease",
+                      "WebkitTransform": "scale(1)",
+                      "WebkitTransition": "100ms transform ease",
+                      "height": 20,
+                      "marginBottom": 14,
+                      "marginRight": 14,
+                      "msTransform": "scale(1)",
+                      "msTransition": "100ms transform ease",
+                      "transform": "scale(1)",
+                      "transition": "100ms transform ease",
+                      "width": 20,
+                    }
+                  }
+                >
+                  <Focus
+                    color="#fff110"
+                    focusStyle={
+                      Object {
+                        "boxShadow": "inset 0 0 0 10px #fff110, 0 0 5px #fff110",
+                      }
+                    }
+                    onClick={[Function]}
+                    style={
+                      Object {
+                        "MozBorderRadius": "50%",
+                        "MozBoxShadow": "inset 0 0 0 10px #fff110",
+                        "MozTransition": "100ms box-shadow ease",
+                        "OBorderRadius": "50%",
+                        "OBoxShadow": "inset 0 0 0 10px #fff110",
+                        "OTransition": "100ms box-shadow ease",
+                        "WebkitBorderRadius": "50%",
+                        "WebkitBoxShadow": "inset 0 0 0 10px #fff110",
+                        "WebkitTransition": "100ms box-shadow ease",
+                        "background": "transparent",
+                        "borderRadius": "50%",
+                        "boxShadow": "inset 0 0 0 10px #fff110",
+                        "msBorderRadius": "50%",
+                        "msBoxShadow": "inset 0 0 0 10px #fff110",
+                        "msTransition": "100ms box-shadow ease",
+                        "transition": "100ms box-shadow ease",
+                      }
+                    }
+                  >
+                    <span
+                      onBlur={[Function]}
+                      onFocus={[Function]}
+                    >
+                      <Swatch
+                        color="#fff110"
+                        focus={false}
+                        focusStyle={
+                          Object {
+                            "boxShadow": "inset 0 0 0 10px #fff110, 0 0 5px #fff110",
+                          }
+                        }
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "MozBorderRadius": "50%",
+                            "MozBoxShadow": "inset 0 0 0 10px #fff110",
+                            "MozTransition": "100ms box-shadow ease",
+                            "OBorderRadius": "50%",
+                            "OBoxShadow": "inset 0 0 0 10px #fff110",
+                            "OTransition": "100ms box-shadow ease",
+                            "WebkitBorderRadius": "50%",
+                            "WebkitBoxShadow": "inset 0 0 0 10px #fff110",
+                            "WebkitTransition": "100ms box-shadow ease",
+                            "background": "transparent",
+                            "borderRadius": "50%",
+                            "boxShadow": "inset 0 0 0 10px #fff110",
+                            "msBorderRadius": "50%",
+                            "msBoxShadow": "inset 0 0 0 10px #fff110",
+                            "msTransition": "100ms box-shadow ease",
+                            "transition": "100ms box-shadow ease",
+                          }
+                        }
+                      >
+                        <div
+                          onClick={[Function]}
+                          onKeyDown={[Function]}
+                          style={
+                            Object {
+                              "MozBorderRadius": "50%",
+                              "MozBoxShadow": "inset 0 0 0 10px #fff110",
+                              "MozTransition": "100ms box-shadow ease",
+                              "OBorderRadius": "50%",
+                              "OBoxShadow": "inset 0 0 0 10px #fff110",
+                              "OTransition": "100ms box-shadow ease",
+                              "WebkitBorderRadius": "50%",
+                              "WebkitBoxShadow": "inset 0 0 0 10px #fff110",
+                              "WebkitTransition": "100ms box-shadow ease",
+                              "background": "transparent",
+                              "borderRadius": "50%",
+                              "boxShadow": "inset 0 0 0 10px #fff110",
+                              "cursor": "pointer",
+                              "height": "100%",
+                              "msBorderRadius": "50%",
+                              "msBoxShadow": "inset 0 0 0 10px #fff110",
+                              "msTransition": "100ms box-shadow ease",
+                              "outline": "none",
+                              "position": "relative",
+                              "transition": "100ms box-shadow ease",
+                              "width": "100%",
+                            }
+                          }
+                          tabIndex={0}
+                          title="#fff110"
+                        />
+                      </Swatch>
+                    </span>
+                  </Focus>
+                </div>
+              </CircleSwatch>
+            </span>
+          </Hover>
+          <Hover
+            active={false}
+            circleSize={20}
+            circleSpacing={14}
+            color="#4cba35"
+            key="#4cba35"
+            onClick={[Function]}
+          >
+            <span
+              onMouseOut={[Function]}
+              onMouseOver={[Function]}
+            >
+              <CircleSwatch
+                active={false}
+                circleSize={20}
+                circleSpacing={14}
+                color="#4cba35"
+                hover={false}
+                onClick={[Function]}
+              >
+                <div
+                  style={
+                    Object {
+                      "MozTransform": "scale(1)",
+                      "MozTransition": "100ms transform ease",
+                      "OTransform": "scale(1)",
+                      "OTransition": "100ms transform ease",
+                      "WebkitTransform": "scale(1)",
+                      "WebkitTransition": "100ms transform ease",
+                      "height": 20,
+                      "marginBottom": 14,
+                      "marginRight": 14,
+                      "msTransform": "scale(1)",
+                      "msTransition": "100ms transform ease",
+                      "transform": "scale(1)",
+                      "transition": "100ms transform ease",
+                      "width": 20,
+                    }
+                  }
+                >
+                  <Focus
+                    color="#4cba35"
+                    focusStyle={
+                      Object {
+                        "boxShadow": "inset 0 0 0 10px #4cba35, 0 0 5px #4cba35",
+                      }
+                    }
+                    onClick={[Function]}
+                    style={
+                      Object {
+                        "MozBorderRadius": "50%",
+                        "MozBoxShadow": "inset 0 0 0 10px #4cba35",
+                        "MozTransition": "100ms box-shadow ease",
+                        "OBorderRadius": "50%",
+                        "OBoxShadow": "inset 0 0 0 10px #4cba35",
+                        "OTransition": "100ms box-shadow ease",
+                        "WebkitBorderRadius": "50%",
+                        "WebkitBoxShadow": "inset 0 0 0 10px #4cba35",
+                        "WebkitTransition": "100ms box-shadow ease",
+                        "background": "transparent",
+                        "borderRadius": "50%",
+                        "boxShadow": "inset 0 0 0 10px #4cba35",
+                        "msBorderRadius": "50%",
+                        "msBoxShadow": "inset 0 0 0 10px #4cba35",
+                        "msTransition": "100ms box-shadow ease",
+                        "transition": "100ms box-shadow ease",
+                      }
+                    }
+                  >
+                    <span
+                      onBlur={[Function]}
+                      onFocus={[Function]}
+                    >
+                      <Swatch
+                        color="#4cba35"
+                        focus={false}
+                        focusStyle={
+                          Object {
+                            "boxShadow": "inset 0 0 0 10px #4cba35, 0 0 5px #4cba35",
+                          }
+                        }
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "MozBorderRadius": "50%",
+                            "MozBoxShadow": "inset 0 0 0 10px #4cba35",
+                            "MozTransition": "100ms box-shadow ease",
+                            "OBorderRadius": "50%",
+                            "OBoxShadow": "inset 0 0 0 10px #4cba35",
+                            "OTransition": "100ms box-shadow ease",
+                            "WebkitBorderRadius": "50%",
+                            "WebkitBoxShadow": "inset 0 0 0 10px #4cba35",
+                            "WebkitTransition": "100ms box-shadow ease",
+                            "background": "transparent",
+                            "borderRadius": "50%",
+                            "boxShadow": "inset 0 0 0 10px #4cba35",
+                            "msBorderRadius": "50%",
+                            "msBoxShadow": "inset 0 0 0 10px #4cba35",
+                            "msTransition": "100ms box-shadow ease",
+                            "transition": "100ms box-shadow ease",
+                          }
+                        }
+                      >
+                        <div
+                          onClick={[Function]}
+                          onKeyDown={[Function]}
+                          style={
+                            Object {
+                              "MozBorderRadius": "50%",
+                              "MozBoxShadow": "inset 0 0 0 10px #4cba35",
+                              "MozTransition": "100ms box-shadow ease",
+                              "OBorderRadius": "50%",
+                              "OBoxShadow": "inset 0 0 0 10px #4cba35",
+                              "OTransition": "100ms box-shadow ease",
+                              "WebkitBorderRadius": "50%",
+                              "WebkitBoxShadow": "inset 0 0 0 10px #4cba35",
+                              "WebkitTransition": "100ms box-shadow ease",
+                              "background": "transparent",
+                              "borderRadius": "50%",
+                              "boxShadow": "inset 0 0 0 10px #4cba35",
+                              "cursor": "pointer",
+                              "height": "100%",
+                              "msBorderRadius": "50%",
+                              "msBoxShadow": "inset 0 0 0 10px #4cba35",
+                              "msTransition": "100ms box-shadow ease",
+                              "outline": "none",
+                              "position": "relative",
+                              "transition": "100ms box-shadow ease",
+                              "width": "100%",
+                            }
+                          }
+                          tabIndex={0}
+                          title="#4cba35"
+                        />
+                      </Swatch>
+                    </span>
+                  </Focus>
+                </div>
+              </CircleSwatch>
+            </span>
+          </Hover>
+          <Hover
+            active={false}
+            circleSize={20}
+            circleSpacing={14}
+            color="#28a3dc"
+            key="#28a3dc"
+            onClick={[Function]}
+          >
+            <span
+              onMouseOut={[Function]}
+              onMouseOver={[Function]}
+            >
+              <CircleSwatch
+                active={false}
+                circleSize={20}
+                circleSpacing={14}
+                color="#28a3dc"
+                hover={false}
+                onClick={[Function]}
+              >
+                <div
+                  style={
+                    Object {
+                      "MozTransform": "scale(1)",
+                      "MozTransition": "100ms transform ease",
+                      "OTransform": "scale(1)",
+                      "OTransition": "100ms transform ease",
+                      "WebkitTransform": "scale(1)",
+                      "WebkitTransition": "100ms transform ease",
+                      "height": 20,
+                      "marginBottom": 14,
+                      "marginRight": 14,
+                      "msTransform": "scale(1)",
+                      "msTransition": "100ms transform ease",
+                      "transform": "scale(1)",
+                      "transition": "100ms transform ease",
+                      "width": 20,
+                    }
+                  }
+                >
+                  <Focus
+                    color="#28a3dc"
+                    focusStyle={
+                      Object {
+                        "boxShadow": "inset 0 0 0 10px #28a3dc, 0 0 5px #28a3dc",
+                      }
+                    }
+                    onClick={[Function]}
+                    style={
+                      Object {
+                        "MozBorderRadius": "50%",
+                        "MozBoxShadow": "inset 0 0 0 10px #28a3dc",
+                        "MozTransition": "100ms box-shadow ease",
+                        "OBorderRadius": "50%",
+                        "OBoxShadow": "inset 0 0 0 10px #28a3dc",
+                        "OTransition": "100ms box-shadow ease",
+                        "WebkitBorderRadius": "50%",
+                        "WebkitBoxShadow": "inset 0 0 0 10px #28a3dc",
+                        "WebkitTransition": "100ms box-shadow ease",
+                        "background": "transparent",
+                        "borderRadius": "50%",
+                        "boxShadow": "inset 0 0 0 10px #28a3dc",
+                        "msBorderRadius": "50%",
+                        "msBoxShadow": "inset 0 0 0 10px #28a3dc",
+                        "msTransition": "100ms box-shadow ease",
+                        "transition": "100ms box-shadow ease",
+                      }
+                    }
+                  >
+                    <span
+                      onBlur={[Function]}
+                      onFocus={[Function]}
+                    >
+                      <Swatch
+                        color="#28a3dc"
+                        focus={false}
+                        focusStyle={
+                          Object {
+                            "boxShadow": "inset 0 0 0 10px #28a3dc, 0 0 5px #28a3dc",
+                          }
+                        }
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "MozBorderRadius": "50%",
+                            "MozBoxShadow": "inset 0 0 0 10px #28a3dc",
+                            "MozTransition": "100ms box-shadow ease",
+                            "OBorderRadius": "50%",
+                            "OBoxShadow": "inset 0 0 0 10px #28a3dc",
+                            "OTransition": "100ms box-shadow ease",
+                            "WebkitBorderRadius": "50%",
+                            "WebkitBoxShadow": "inset 0 0 0 10px #28a3dc",
+                            "WebkitTransition": "100ms box-shadow ease",
+                            "background": "transparent",
+                            "borderRadius": "50%",
+                            "boxShadow": "inset 0 0 0 10px #28a3dc",
+                            "msBorderRadius": "50%",
+                            "msBoxShadow": "inset 0 0 0 10px #28a3dc",
+                            "msTransition": "100ms box-shadow ease",
+                            "transition": "100ms box-shadow ease",
+                          }
+                        }
+                      >
+                        <div
+                          onClick={[Function]}
+                          onKeyDown={[Function]}
+                          style={
+                            Object {
+                              "MozBorderRadius": "50%",
+                              "MozBoxShadow": "inset 0 0 0 10px #28a3dc",
+                              "MozTransition": "100ms box-shadow ease",
+                              "OBorderRadius": "50%",
+                              "OBoxShadow": "inset 0 0 0 10px #28a3dc",
+                              "OTransition": "100ms box-shadow ease",
+                              "WebkitBorderRadius": "50%",
+                              "WebkitBoxShadow": "inset 0 0 0 10px #28a3dc",
+                              "WebkitTransition": "100ms box-shadow ease",
+                              "background": "transparent",
+                              "borderRadius": "50%",
+                              "boxShadow": "inset 0 0 0 10px #28a3dc",
+                              "cursor": "pointer",
+                              "height": "100%",
+                              "msBorderRadius": "50%",
+                              "msBoxShadow": "inset 0 0 0 10px #28a3dc",
+                              "msTransition": "100ms box-shadow ease",
+                              "outline": "none",
+                              "position": "relative",
+                              "transition": "100ms box-shadow ease",
+                              "width": "100%",
+                            }
+                          }
+                          tabIndex={0}
+                          title="#28a3dc"
+                        />
+                      </Swatch>
+                    </span>
+                  </Focus>
+                </div>
+              </CircleSwatch>
+            </span>
+          </Hover>
+          <Hover
+            active={false}
+            circleSize={20}
+            circleSpacing={14}
+            color="#9719ff"
+            key="#9719ff"
+            onClick={[Function]}
+          >
+            <span
+              onMouseOut={[Function]}
+              onMouseOver={[Function]}
+            >
+              <CircleSwatch
+                active={false}
+                circleSize={20}
+                circleSpacing={14}
+                color="#9719ff"
+                hover={false}
+                onClick={[Function]}
+              >
+                <div
+                  style={
+                    Object {
+                      "MozTransform": "scale(1)",
+                      "MozTransition": "100ms transform ease",
+                      "OTransform": "scale(1)",
+                      "OTransition": "100ms transform ease",
+                      "WebkitTransform": "scale(1)",
+                      "WebkitTransition": "100ms transform ease",
+                      "height": 20,
+                      "marginBottom": 14,
+                      "marginRight": 14,
+                      "msTransform": "scale(1)",
+                      "msTransition": "100ms transform ease",
+                      "transform": "scale(1)",
+                      "transition": "100ms transform ease",
+                      "width": 20,
+                    }
+                  }
+                >
+                  <Focus
+                    color="#9719ff"
+                    focusStyle={
+                      Object {
+                        "boxShadow": "inset 0 0 0 10px #9719ff, 0 0 5px #9719ff",
+                      }
+                    }
+                    onClick={[Function]}
+                    style={
+                      Object {
+                        "MozBorderRadius": "50%",
+                        "MozBoxShadow": "inset 0 0 0 10px #9719ff",
+                        "MozTransition": "100ms box-shadow ease",
+                        "OBorderRadius": "50%",
+                        "OBoxShadow": "inset 0 0 0 10px #9719ff",
+                        "OTransition": "100ms box-shadow ease",
+                        "WebkitBorderRadius": "50%",
+                        "WebkitBoxShadow": "inset 0 0 0 10px #9719ff",
+                        "WebkitTransition": "100ms box-shadow ease",
+                        "background": "transparent",
+                        "borderRadius": "50%",
+                        "boxShadow": "inset 0 0 0 10px #9719ff",
+                        "msBorderRadius": "50%",
+                        "msBoxShadow": "inset 0 0 0 10px #9719ff",
+                        "msTransition": "100ms box-shadow ease",
+                        "transition": "100ms box-shadow ease",
+                      }
+                    }
+                  >
+                    <span
+                      onBlur={[Function]}
+                      onFocus={[Function]}
+                    >
+                      <Swatch
+                        color="#9719ff"
+                        focus={false}
+                        focusStyle={
+                          Object {
+                            "boxShadow": "inset 0 0 0 10px #9719ff, 0 0 5px #9719ff",
+                          }
+                        }
+                        onClick={[Function]}
+                        style={
+                          Object {
+                            "MozBorderRadius": "50%",
+                            "MozBoxShadow": "inset 0 0 0 10px #9719ff",
+                            "MozTransition": "100ms box-shadow ease",
+                            "OBorderRadius": "50%",
+                            "OBoxShadow": "inset 0 0 0 10px #9719ff",
+                            "OTransition": "100ms box-shadow ease",
+                            "WebkitBorderRadius": "50%",
+                            "WebkitBoxShadow": "inset 0 0 0 10px #9719ff",
+                            "WebkitTransition": "100ms box-shadow ease",
+                            "background": "transparent",
+                            "borderRadius": "50%",
+                            "boxShadow": "inset 0 0 0 10px #9719ff",
+                            "msBorderRadius": "50%",
+                            "msBoxShadow": "inset 0 0 0 10px #9719ff",
+                            "msTransition": "100ms box-shadow ease",
+                            "transition": "100ms box-shadow ease",
+                          }
+                        }
+                      >
+                        <div
+                          onClick={[Function]}
+                          onKeyDown={[Function]}
+                          style={
+                            Object {
+                              "MozBorderRadius": "50%",
+                              "MozBoxShadow": "inset 0 0 0 10px #9719ff",
+                              "MozTransition": "100ms box-shadow ease",
+                              "OBorderRadius": "50%",
+                              "OBoxShadow": "inset 0 0 0 10px #9719ff",
+                              "OTransition": "100ms box-shadow ease",
+                              "WebkitBorderRadius": "50%",
+                              "WebkitBoxShadow": "inset 0 0 0 10px #9719ff",
+                              "WebkitTransition": "100ms box-shadow ease",
+                              "background": "transparent",
+                              "borderRadius": "50%",
+                              "boxShadow": "inset 0 0 0 10px #9719ff",
+                              "cursor": "pointer",
+                              "height": "100%",
+                              "msBorderRadius": "50%",
+                              "msBoxShadow": "inset 0 0 0 10px #9719ff",
+                              "msTransition": "100ms box-shadow ease",
+                              "outline": "none",
+                              "position": "relative",
+                              "transition": "100ms box-shadow ease",
+                              "width": "100%",
+                            }
+                          }
+                          tabIndex={0}
+                          title="#9719ff"
+                        />
+                      </Swatch>
+                    </span>
+                  </Focus>
+                </div>
+              </CircleSwatch>
+            </span>
+          </Hover>
+        </div>
+      </Circle>
+    </ColorPicker>
+  </div>
+</Component>
+`;

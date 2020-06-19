@@ -1,0 +1,14 @@
+@import '../../../../style/index';
+
+.annotation-close {
+  &:hover {
+    cursor: pointer;
+    color: 'blue!important';
+  }
+}
+
+.#{$videx-prefix}-tags-container {
+  overflow: auto;
+  //white-space: nowrap; //Enable for scroll
+  width: 100%;
+}

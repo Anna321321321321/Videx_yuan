@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OnlineFeedbackForm Unit Tests simple test 1`] = `
+<OnlineFeedbackForm
+  category={
+    Object {
+      "value": "request",
+    }
+  }
+  email={
+    Object {
+      "value": "test@ubc.com",
+    }
+  }
+  form={
+    Object {
+      "getFieldDecorator": [Function],
+      "getFieldError": [Function],
+      "getFieldInstance": [Function],
+      "getFieldProps": [Function],
+      "getFieldValue": [Function],
+      "getFieldsError": [Function],
+      "getFieldsValue": [Function],
+      "isFieldTouched": [Function],
+      "isFieldValidating": [Function],
+      "isFieldsTouched": [Function],
+      "isFieldsValidating": [Function],
+      "isSubmitting": [Function],
+      "resetFields": [Function],
+      "setFields": [Function],
+      "setFieldsInitialValue": [Function],
+      "setFieldsValue": [Function],
+      "submit": [Function],
+      "validateFields": [Function],
+      "validateFieldsAndScroll": [Function],
+    }
+  }
+  message={
+    Object {
+      "value": "test",
+    }
+  }
+  onChange={null}
+  onSubmit={null}
+  rate={
+    Object {
+      "value": 1,
+    }
+  }
+/>
+`;

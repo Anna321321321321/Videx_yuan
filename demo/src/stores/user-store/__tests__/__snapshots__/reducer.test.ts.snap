@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`User reducer unit test INIT 1`] = `
+Immutable.Map {
+  "id": "46bf1e47-bd1f-40a8-b7b3-8f8781c04077",
+  "name": "Teacher One",
+  "email": "teacher1@videxint.onmicrosoft.com",
+  "type": 1,
+  "initialized": true,
+}
+`;
