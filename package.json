@@ -72,7 +72,7 @@
     "jest": "23.1.0",
     "license-webpack-plugin": "2.0.0-alpha.3",
     "lint-staged": "7.2.0",
-    "node-sass": "4.9.1",
+    "node-sass": "4.13.1",
     "nodemon": "2.0.2",
     "prettier": "1.13.7",
     "react": "16.4.1",
