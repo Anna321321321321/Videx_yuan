@@ -37,7 +37,7 @@
     "react-copy-to-clipboard": "5.0.1",
     "react-responsive": "5.0.0",
     "recompose": "0.30.0",
-    "redis": "2.8.0",
+    "redis": "3.1.1",
     "semantic-ui-react": "0.85.0",
     "tsconfig-paths": "3.4.2",
     "uuid": "3.3.2",
