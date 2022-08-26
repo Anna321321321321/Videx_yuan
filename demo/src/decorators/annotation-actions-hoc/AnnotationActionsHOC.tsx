@@ -8,6 +8,7 @@ import {
   withHandlers
 } from 'recompose';
 import * as AnnotationsStore from '../../stores/annotations-store';
+import MapPropsHOC from '../url-shortener/MapPropsHOC';
 
 export default compose(
   // prettier-ignore
@@ -69,6 +70,7 @@ export default compose(
     updateColor: props.onUpdateColor,
     updateText: props.onUpdateText,
     toggleShare: props.onToggleShare,
+    togglePublicForShare: props.onTogglePublicForShare,
     toggleLike: props.onToggleLike,
     remove: props.onRemove,
     link: props.onLink

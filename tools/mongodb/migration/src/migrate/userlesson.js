@@ -40,7 +40,8 @@ const createAnnotation = async (userId, lessonId, text, color, start, end) => {
     start: start,
     end: end,
     share: false,
-    editedAt: new Date()
+    editedAt: new Date(),
+    publicForShare: true
   });
 };
 

@@ -1,13 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router';
 import { Header, Menu } from 'semantic-ui-react';
-import { Button } from 'antd';
+import { Button, Dropdown } from 'antd';
 import * as Logger from 'videx/client/logger';
 import UserContainer from '../../container/user-container';
 import PlaylistContainer from '../../container/active-video-playlist-container';
 import AnnotationsContainer from '../../container/active-video-annotations-container';
 import AnalyticsContainer from '../../container/analytics-container';
-
+import ShareContainer from '../../container/share-container';
+import ShareAnnotationContainer from '../../container/share-annotation-container';
+import DoneButtonContainer from '../../container/done-button-container';
 interface ActiveVideoHeaderProps {
   lessonName: string;
   onClickFRE: () => void;
@@ -31,7 +33,7 @@ interface ActiveVideoHeaderProps {
   userType: number;
 }
 
-const renderAnalytics = userType => {
+const renderAnalytics = (userType) => {
   if (userType === 1 || userType === 2) {
     return true;
   }
@@ -45,7 +47,7 @@ export default (props: ActiveVideoHeaderProps) => {
       style={{
         marginTop: '0px',
         marginBottom: '0px',
-        height: '50px'
+        height: '50px',
       }}
     >
       <Menu.Item key={0}>
@@ -93,6 +95,9 @@ export default (props: ActiveVideoHeaderProps) => {
         </Menu.Item>
       )}
       <Menu.Item key={5}>
+        <ShareAnnotationContainer />
+      </Menu.Item>
+      <Menu.Item key={6}>
         {renderAnalytics(props.userType) && (
           <AnalyticsContainer
             courseId={props.courseId}
@@ -100,7 +105,17 @@ export default (props: ActiveVideoHeaderProps) => {
           />
         )}
       </Menu.Item>
-      <Menu.Item position="right" key={6}>
+      <Menu.Item position="right" key={7}>
+        {/* <Button
+          type="primary"
+          className="select-done-button"
+          onClick={props.onClickFRE}
+        >
+          Done
+        </Button> */}
+        <DoneButtonContainer />
+      </Menu.Item>
+      <Menu.Item position="right" key={8}>
         <UserContainer />
       </Menu.Item>
     </Menu>

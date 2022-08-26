@@ -4,7 +4,7 @@ import './vendors';
 import { LocaleProvider } from 'antd';
 import enUS from 'antd/lib/locale-provider/en_US';
 import React from 'react';
-import ReactDOM from 'react-dom'; //indicates using es6(not es 5)
+import ReactDOM from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
 import { Provider } from 'react-redux';
 import init from './init';
@@ -29,7 +29,7 @@ const render = routes => {
 
 render(routes);
 
-if (module.hot) { //hot module replacement api
+if (module.hot) {
   module.hot.accept('./routes', () => {
     const nextRoutes = require('./routes').default;
     render(nextRoutes);

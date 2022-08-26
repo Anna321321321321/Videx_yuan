@@ -4,7 +4,6 @@ import * as share from '../share';
 import * as controller from './controller';
 
 const router = express.Router();
-
 /**
  * Consent Controllers
  */
@@ -218,6 +217,24 @@ router
  * Flight Controllers
  */
 router.route('/flights').get(controller.flights.get);
+/**
+ * Share Controllers
+ */
+router
+  .route('/courses/:courseId/lessons/:lessonId/share')
+  .get(controller.share.get);
+router
+  .route('/courses/lessons/share/:link/accessor')
+  .get(controller.share.getLink.getAccessor);
+router
+  .route('/courses/lessons/share/:link/accessor')
+  .post(controller.share.getLink.postAccessor);
+// router
+//   .route('/courses/lessons/share/:link')
+//   .get(controller.share.getLink.getLink);
+router
+  .route('/courses/lessons/share/:link')
+  .get(controller.share.getLink.getLink);
 
 share.noRoutes(router);
 

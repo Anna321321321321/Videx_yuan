@@ -6,7 +6,9 @@ import CopyText from '../../components/copy-text';
 const INITIAL_STATE = {
   annotations: [],
   selected: null,
-  loading: true
+  loading: true,
+  selectPrivate: false,
+  sharedAnnotations: [],
 };
 
 export default (state = INITIAL_STATE, action) => {
@@ -15,7 +17,7 @@ export default (state = INITIAL_STATE, action) => {
       return {
         ...state,
         annotations: action.payload.annotations,
-        loading: false
+        loading: false,
       };
 
     case actionTypes.ADD:
@@ -49,13 +51,13 @@ export default (state = INITIAL_STATE, action) => {
       return {
         ...state,
         annotations: [...state.annotations, action.payload.annotation],
-        loading: false
+        loading: false,
       };
 
     case actionTypes.UPDATED:
       return {
         ...state,
-        annotations: state.annotations.map(annotation => {
+        annotations: state.annotations.map((annotation) => {
           const { id, data } = action.payload;
           if (annotation.toObject().id !== id) {
             return annotation;
@@ -71,13 +73,16 @@ export default (state = INITIAL_STATE, action) => {
                 case 'share':
                   annotation.setShare(data[property]);
                   break;
+                case 'publicForshare':
+                  annotation.setpublicForshare(data[property]);
+                  break;
               }
             }
             annotation.setLoading(false);
             return annotation;
           }
         }),
-        loading: false
+        loading: false,
       };
 
     case actionTypes.SHARED:
@@ -86,12 +91,33 @@ export default (state = INITIAL_STATE, action) => {
       const url =
         window.location.href.split('/course')[0] + '/link?token=' + token;
       Modal.info({
-        title: 'You can share this interval with your peers',
+        title: 'You can share this interval with your peers.',
         content: (
           <div>
             <CopyText text={url} />
           </div>
-        )
+        ),
+      });
+      // prettier-ignore
+      return {
+        ...state,
+        annotations: state.annotations.map((annotation) => {
+          annotation.setLoading(false);
+          return annotation;
+        }),
+        loading: false,
+      }
+    case actionTypes.SHAREDANNOTATION:
+      const { link } = action.payload;
+      const url2 = window.location.href + '/link?link=' + link;
+      // window.location.href.split('/course')[0] + '/link?link=' + link;
+      Modal.info({
+        title: 'You can share your public annotations.',
+        content: (
+          <div>
+            <CopyText text={url2} />
+          </div>
+        ),
       });
       // prettier-ignore
       return {
@@ -148,17 +174,27 @@ export default (state = INITIAL_STATE, action) => {
     case actionTypes.SELECT:
       return {
         ...state,
-        selected: action.payload.source
+        selected: action.payload.source,
       };
 
     case actionTypes.DESELECT:
       return {
         ...state,
-        selected: null
+        selected: null,
       };
 
     case actionTypes.DEINIT:
       return INITIAL_STATE;
+    case actionTypes.ABLESELECTPRIVATEANNOTATION:
+      return {
+        ...state,
+        selectPrivate: true,
+      };
+    case actionTypes.DISABLESELECTPRIVATEANNOTATION:
+      return {
+        ...state,
+        selectPrivate: false,
+      };
 
     default:
       return state;

@@ -68,6 +68,19 @@ export default class AnnotationModel implements IAnnotation {
     );
   }
 
+  public async setPublicForShare(publicForShare: boolean): Promise<void> {
+    this.document_ = await Mongoose.findByIdAndUpdate(
+      'Annotation',
+      this.document_.id,
+      {
+        $set: {
+          publicForShare: publicForShare,
+          editedAt: new Date()
+        }
+      }
+    );
+  }
+
   public toObject() {
     return {
       id: this.document_._id,
@@ -77,7 +90,8 @@ export default class AnnotationModel implements IAnnotation {
       start: this.document_.start,
       end: this.document_.end,
       share: this.document_.share,
-      editedAt: this.document_.editedAt
+      editedAt: this.document_.editedAt,
+      publicForShare: this.document_.publicForShare
     };
   }
 
@@ -85,7 +99,9 @@ export default class AnnotationModel implements IAnnotation {
     userId: string,
     lessonId: string
   ): Promise<IAnnotation[]> {
-    return (await Mongoose.find('Annotation', { userId, lessonId })).map(document => (new AnnotationModel(document)));
+    return (await Mongoose.find('Annotation', { userId, lessonId })).map(
+      document => new AnnotationModel(document)
+    );
   }
 
   public static async findById(annotationId: string): Promise<AnnotationModel> {
@@ -120,7 +136,8 @@ export default class AnnotationModel implements IAnnotation {
       start: start,
       end: end,
       share: false,
-      editedAt: new Date()
+      editedAt: new Date(),
+      publicForShare: true
     });
     return await AnnotationModel.findById(id);
   }

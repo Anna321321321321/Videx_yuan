@@ -9,7 +9,11 @@ import getThumbnail from './getThumbnail';
 import getTranscriptText from './getTranscriptText';
 import isInitialized from './isInitialized';
 import getCategory from './getCategory';
+import getLink from './getLink';
 import getPlaylists from './getPlaylists';
+import getSharedAnnotations from './getSharedAnnotations';
+import getShared from './getShared';
+import getSharedList from './getSharedList';
 
 export {
   getCaptionFile,
@@ -23,5 +27,9 @@ export {
   getDuration,
   isInitialized,
   getCategory,
-  getPlaylists
+  getPlaylists,
+  getSharedAnnotations,
+  getLink,
+  getShared,
+  getSharedList,
 };

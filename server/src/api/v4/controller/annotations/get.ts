@@ -16,6 +16,7 @@ interface IAnnotationJson {
   start: number;
   end: number;
   share: boolean;
+  publicForShare: boolean;
   reaction: {
     counter: number;
     likeable: boolean;

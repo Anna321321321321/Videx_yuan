@@ -2,6 +2,7 @@ import React from 'react';
 import { IndexRoute, Route } from 'react-router';
 import App from './container/app';
 import ActiveVideoPage from './pages/active-video-page';
+import ActiveVideoSharePage from './pages/active-video-share-page';
 import CourseLibraryPage from './pages/course-library-page';
 import CreateCoursePage from './pages/create-course-page';
 import EditCoursePage from './pages/edit-course-page';
@@ -18,6 +19,10 @@ export const routes = () => {
       <Route
         path="course/:courseId/lesson/:lessonId"
         component={ActiveVideoPage}
+      />
+      <Route
+        path="course/:courseId/lesson/:lessonId/:link"
+        component={ActiveVideoSharePage}
       />
       <Route path="consent/shareInfo" component={IdConsentPage} />
     </Route>

@@ -53,17 +53,17 @@ const enhance = compose(
   withState('showEdit', 'setShowEdit', false),
   withState('contextMenuData', 'setContextMenuData', null),
   withHandlers({
-    setShowIcon: props => status => {
+    setShowIcon: (props) => (status) => {
       props.setShowIcon(status);
     },
-    setCoordinates: props => (x, y, data) => {
+    setCoordinates: (props) => (x, y, data) => {
       props.setContextMenuData({ xCo: x, yCo: y, data: data });
       props.contextMenuIndexHandler(props.index1);
     },
-    debounceDragAndResize: props => value => {
+    debounceDragAndResize: (props) => (value) => {
       Logger.event('Transcript.Thumbnail.Resize', { size: value });
       props.onResize(value);
-    }
+    },
   }),
   onlyUpdateForKeys([
     'transcript',
@@ -73,7 +73,7 @@ const enhance = compose(
     'contextMenuData',
     'contextMenuIndex',
     'popupMenuCoordinates',
-    'flexSize'
+    'flexSize',
   ])
 );
 
@@ -103,7 +103,7 @@ export default enhance((props: TranscriptSegmentContainerProps) => {
         <ReflexContainer orientation="vertical">
           <ReflexElement
             flex={props.flexSize}
-            onResize={_.debounce(event => {
+            onResize={_.debounce((event) => {
               props.debounceDragAndResize(event.component.props.flex);
             }, 500)}
             propagateDimensions={false}
@@ -160,12 +160,11 @@ export default enhance((props: TranscriptSegmentContainerProps) => {
                     onClickHandle={null}
                   />
                 )}
-              {props.toolPosition &&
-                props.toolPosition[0] === props.index1 && (
-                  <TranscriptAnnotationPickerDecorator
-                    coordinates={props.popupMenuCoordinates}
-                  />
-                )}
+              {props.toolPosition && props.toolPosition[0] === props.index1 && (
+                <TranscriptAnnotationPickerDecorator
+                  coordinates={props.popupMenuCoordinates}
+                />
+              )}
             </div>
           </ReflexElement>
         </ReflexContainer>
@@ -183,7 +182,7 @@ export default enhance((props: TranscriptSegmentContainerProps) => {
             position: 'relative',
             marginTop: '25px',
             padding: 'none',
-            display: 'block'
+            display: 'block',
           }}
           className="videx-quick-annotation-tool videx-hover"
           onClick={() => {

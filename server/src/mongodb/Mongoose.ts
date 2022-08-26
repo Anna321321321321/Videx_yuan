@@ -12,7 +12,8 @@ type Model =
   | 'Annotation'
   | 'Experiment'
   | 'Reaction'
-  | 'Playlist';
+  | 'Playlist'
+  | 'Share';
 
 export default class Mongoose {
   public static async bulkWrite(model: Model, actions): Promise<void> {
@@ -67,7 +68,7 @@ export default class Mongoose {
       const document = await this.getModel_(model).findByIdAndUpdate(id, data, {
         ...options,
         new: true,
-        runValidators: true
+        runValidators: true,
       });
       return document;
     } catch (e) {
@@ -88,7 +89,7 @@ export default class Mongoose {
         data,
         {
           ...options,
-          runValidators: true
+          runValidators: true,
         }
       );
       return document;
@@ -96,7 +97,7 @@ export default class Mongoose {
       log.exception(e, {
         model,
         condition: JSON.stringify(condition),
-        data: JSON.stringify(data)
+        data: JSON.stringify(data),
       });
       throw new Error('findOneAndUpdate error');
     }
@@ -136,6 +137,8 @@ export default class Mongoose {
         return mongoose.model('Reaction');
       case 'Playlist':
         return mongoose.model('Playlist');
+      case 'Share':
+        return mongoose.model('Share');
     }
   }
 
@@ -158,14 +161,14 @@ export default class Mongoose {
     try {
       await this.getModel_(model).update(filter, command, {
         ...options,
-        runValidators: true
+        runValidators: true,
       });
       return;
     } catch (e) {
       log.exception(e, {
         model,
         filter: JSON.stringify(filter),
-        document: JSON.stringify(command)
+        document: JSON.stringify(command),
       });
       throw new Error('update error');
     }

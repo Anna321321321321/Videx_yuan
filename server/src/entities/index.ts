@@ -20,6 +20,8 @@ import LinkModel from './LinkModel';
 import PlaylistModel from './PlaylistModel';
 import ReactionModel from './ReactionModel';
 import UserModel from './UserModel';
+import ShareModel from './ShareModel';
+import IShare from './IShare';
 
 export {
   ICourse,
@@ -43,5 +45,7 @@ export {
   IReaction,
   ReactionModel,
   IPlaylist,
-  PlaylistModel
+  PlaylistModel,
+  ShareModel,
+  IShare,
 };

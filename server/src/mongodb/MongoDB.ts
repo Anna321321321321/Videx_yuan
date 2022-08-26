@@ -15,7 +15,8 @@ import {
   LinkSchema,
   ReactionSchema,
   UserSchema,
-  PlaylistSchema
+  PlaylistSchema,
+  ShareSchema,
 } from './models';
 
 (<any>mongoose).Promise = Promise;
@@ -26,7 +27,7 @@ const baseOptions = {
   autoReconnect: true,
   reconnectInterval: 10 * 1000,
   reconnectTries: Number.MAX_VALUE,
-  promiseLibrary: global.Promise
+  promiseLibrary: global.Promise,
 };
 
 const NODE_ENV = config.util.getEnv('NODE_ENV');
@@ -36,7 +37,7 @@ const options = NODE_ENV === 'production' || NODE_ENV === 'staging' ? { ...baseO
 
 export default class MongoDB {
   public static init(): Promise<void> {
-    return new Promise(async resolve => {
+    return new Promise(async (resolve) => {
       mongoose.connection.on('connected', () => {
         log.trace('info', 'MongoDB connected to server');
         mongoose.model('History', HistorySchema);
@@ -50,6 +51,7 @@ export default class MongoDB {
         mongoose.model('Experiment', ExperimentSchema);
         mongoose.model('Reaction', ReactionSchema);
         mongoose.model('Playlist', PlaylistSchema);
+        mongoose.model('Share', ShareSchema);
         CircuitBreaker.close('mongodb');
         resolve();
       });
@@ -59,7 +61,7 @@ export default class MongoDB {
         CircuitBreaker.open('mongodb');
       });
 
-      mongoose.connection.on('error', err => log.exception(err));
+      mongoose.connection.on('error', (err) => log.exception(err));
 
       process.once('SIGUSR2', () => {
         log.trace('info', `MongoDB nodemon restart`);
@@ -74,15 +76,12 @@ export default class MongoDB {
       for (let i = 0; i < Number.MAX_SAFE_INTEGER; i += 1) {
         try {
           log.trace('info', 'MongoDB connecting to server ');
-          await mongoose.connect(
-            dbUrl,
-            options
-          );
+          await mongoose.connect(dbUrl, options);
           break;
         } catch (e) {
           log.trace('critical', 'MongoDB failed to connect to server ');
           const sleep = (): Promise<void> =>
-            new Promise(resolve => setTimeout(resolve, 10 * 1000));
+            new Promise((resolve) => setTimeout(resolve, 10 * 1000));
           await sleep();
         }
       }
@@ -131,6 +130,7 @@ export default class MongoDB {
     await Mongoose.remove('Experiment', {});
     await Mongoose.remove('Reaction', {});
     await Mongoose.remove('Playlist', {});
+    await Mongoose.remove('Share', {});
     log.trace('critical', 'MongoDB destoryDB_ complete');
   }
 }

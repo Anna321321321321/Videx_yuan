@@ -1,13 +1,14 @@
 import * as rxjs from '../../system/rxjs';
 import * as ActiveVideoStore from '../active-video-store';
+import * as AnnotationStore from '../active-video-store';
 import * as ErrorHandleStore from '../error-handle-store';
 import Annotation from './Annotation';
 import * as actionTypes from './actionTypes';
 import * as actions from './actions';
 
-const helper = (annotation: Annotation, transcript) => {
+export const helper = (annotation: Annotation, transcript) => {
   const text = transcript
-    .map(transcript => {
+    .map((transcript) => {
       const helper = ({ start, end, text }) => {
         const textArray = text.split(' ');
         const length = textArray.length;
@@ -15,7 +16,7 @@ const helper = (annotation: Annotation, transcript) => {
         return textArray.map((text, i) => ({
           text,
           start: Number((start + interval * i).toFixed(3)),
-          end: Number((start + interval * (i + 1)).toFixed(3))
+          end: Number((start + interval * (i + 1)).toFixed(3)),
         }));
       };
       return helper(transcript);
@@ -23,12 +24,12 @@ const helper = (annotation: Annotation, transcript) => {
     .reduce(
       (aggregator: { text: string; start: number; end: number }[], value) => [
         ...aggregator,
-        ...value
+        ...value,
       ],
       []
     )
     .filter(
-      value =>
+      (value) =>
         value.start >= annotation.toObject().start &&
         value.end <= annotation.toObject().end
     )
@@ -41,7 +42,12 @@ const helper = (annotation: Annotation, transcript) => {
 export const fetchEpic = (action$, store) =>
   action$
     .ofType(ActiveVideoStore.actionTypes.INIT)
-    .filter(() => ActiveVideoStore.selectors.getIds(store.getState()) !== null)
+    // .filter(() => ActiveVideoStore.selectors.getIds(store.getState()) !== null)
+    .filter(
+      () =>
+        ActiveVideoStore.selectors.getIds(store.getState()) !== null &&
+        !ActiveVideoStore.selectors.getShared(store.getState())
+    )
     .mergeMap(() => {
       // prettier-ignore
       const { courseId, lessonId } = ActiveVideoStore.selectors.getIds(store.getState());
@@ -60,12 +66,39 @@ export const fetchEpic = (action$, store) =>
           .catch(ErrorHandleStore.actions.sendNotification)
       );
     });
-
+export const fetchShareEpic = (action$, store) =>
+  action$
+    .ofType(ActiveVideoStore.actionTypes.INITSHARE)
+    .filter(() => ActiveVideoStore.selectors.getIds(store.getState()) !== null)
+    .mergeMap((action) => {
+      // prettier-ignore
+      const { courseId, lessonId } = ActiveVideoStore.selectors.getIds(store.getState());
+      const transcript = ActiveVideoStore.selectors.getTranscriptText(
+        store.getState()
+      );
+      const link = action.payload.link;
+      // const link = ActiveVideoStore.selectors.getLink(store.getState());
+      return (
+        // prettier-ignore
+        rxjs.ajax
+          .get(`/api/v4/courses/lessons/share/${link}`)
+          .map(annotations => actions.fetch(annotations.map(annotation => {
+            const instance = Annotation.fromServer(annotation);
+            helper(instance, transcript);
+            return instance;
+          })))
+          .catch(ErrorHandleStore.actions.sendNotification)
+      );
+    });
+// export const getAnnotationsFromLink = (link: string) => (dispatch) =>
+//   APICaller.get(`/api/v4/courses/lessons/share/${link}`, (payload) => {
+//     return dispatch({ payload, type: actionTypes.GETAFROMLINK });
+//   });
 export const addEpic = (action$, store) =>
   action$
     .ofType(actionTypes.ADD)
     .filter(() => ActiveVideoStore.selectors.getIds(store.getState()) !== null)
-    .mergeMap(action => {
+    .mergeMap((action) => {
       const annotation: Annotation = action.payload.annotation;
       // prettier-ignore
       const { courseId, lessonId } = ActiveVideoStore.selectors.getIds(store.getState());
@@ -84,12 +117,22 @@ export const addEpic = (action$, store) =>
           .catch(ErrorHandleStore.actions.sendNotification)
       );
     });
+export const ableSelectPrivateEpic = (action$, store) =>
+  action$
+    .ofType(actionTypes.ABLESELECTPRIVATEANNOTATION)
+    .map(() => actions.ableSelectPrivate());
+
+    /*export const selectPrivateEpic = (action$, store) =>
+  action$
+    .ofType(actionTypes.SELECTPRIVATEANNOTATION)
+    .map(() => actions.selectPrivate());
+    */
 
 export const removeEpic = (action$, store) =>
   action$
     .ofType(actionTypes.REMOVE)
     .filter(() => ActiveVideoStore.selectors.getIds(store.getState()) !== null)
-    .mergeMap(action => {
+    .mergeMap((action) => {
       const { id } = action.payload;
       // prettier-ignore
       const { courseId, lessonId } = ActiveVideoStore.selectors.getIds(store.getState());
@@ -106,7 +149,7 @@ export const updateEpic = (action$, store) =>
   action$
     .ofType(actionTypes.UPDATE)
     .filter(() => ActiveVideoStore.selectors.getIds(store.getState()) !== null)
-    .mergeMap(action => {
+    .mergeMap((action) => {
       const { id, data } = action.payload;
       // prettier-ignore
       const { courseId, lessonId } = ActiveVideoStore.selectors.getIds(store.getState());
@@ -123,7 +166,7 @@ export const likeEpic = (action$, store) =>
   action$
     .ofType(actionTypes.LIKE)
     .filter(() => ActiveVideoStore.selectors.getIds(store.getState()) !== null)
-    .mergeMap(action => {
+    .mergeMap((action) => {
       const { id } = action.payload;
       // prettier-ignore
       const { courseId, lessonId } = ActiveVideoStore.selectors.getIds(store.getState());
@@ -140,7 +183,7 @@ export const unlikeEpic = (action$, store) =>
   action$
     .ofType(actionTypes.UNLIKE)
     .filter(() => ActiveVideoStore.selectors.getIds(store.getState()) !== null)
-    .mergeMap(action => {
+    .mergeMap((action) => {
       const { id } = action.payload;
       // prettier-ignore
       const { courseId, lessonId } = ActiveVideoStore.selectors.getIds(store.getState());
@@ -157,7 +200,7 @@ export const shareEpic = (action$, store) =>
   action$
     .ofType(actionTypes.SHARE)
     .filter(() => ActiveVideoStore.selectors.getIds(store.getState()) !== null)
-    .mergeMap(action => {
+    .mergeMap((action) => {
       const { id, data } = action.payload;
       const { start, end } = data;
       // prettier-ignore
@@ -171,7 +214,7 @@ export const shareEpic = (action$, store) =>
       );
     });
 
-export const deinitEpic = action$ =>
+export const deinitEpic = (action$) =>
   action$
     .ofType(ActiveVideoStore.actionTypes.DEINIT)
     .map(() => actions.deinit());

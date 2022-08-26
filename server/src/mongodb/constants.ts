@@ -339,6 +339,7 @@ export const TEST_DB = {
       start: 0,
       end: 10,
       share: false,
+      publicForShare: true,
       editedAt: new Date(2017, 8, 2)
     },
     {
@@ -350,6 +351,7 @@ export const TEST_DB = {
       start: 10,
       end: 20,
       share: true,
+      publicForShare: true,
       editedAt: new Date(2017, 8, 2)
     }
   ]

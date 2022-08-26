@@ -7,6 +7,7 @@ export default class Annotation {
   private readonly start: number;
   private readonly end: number;
   private share: boolean;
+  private publicForShare: boolean;
   private readonly reaction: {
     counter: number;
     likeable: boolean;
@@ -37,6 +38,10 @@ export default class Annotation {
     this.share = share;
   }
 
+  public setPublicForShare(publicForShare: boolean) {
+    this.publicForShare = publicForShare;
+  }
+
   public likeAnnotation() {
     this.reaction.counter += 1;
     this.reaction.likeable = false;
@@ -58,6 +63,7 @@ export default class Annotation {
     start: number;
     end: number;
     share: boolean;
+    publicForShare: boolean;
     reaction: {
       counter: number;
       likeable: boolean;
@@ -75,6 +81,7 @@ export default class Annotation {
       start: this.start,
       end: this.end,
       share: this.share,
+      publicForShare: this.publicForShare,
       reaction: this.reaction,
       metadata: this.metadata,
       loading: this.loading,
@@ -90,6 +97,7 @@ export default class Annotation {
       data.start,
       data.end,
       data.share,
+      data.publicForShare,
       data.reaction,
       data.metadata,
       false
@@ -123,6 +131,7 @@ export default class Annotation {
       start,
       end,
       false,
+      true,
       { counter: 0, likeable: false },
       { editable: true },
       false
@@ -136,6 +145,7 @@ export default class Annotation {
     start: number,
     end: number,
     share: boolean,
+    pubicForShare: boolean,
     reaction: { counter: number; likeable: boolean },
     metadata: { editable: boolean },
     loading: boolean
@@ -146,6 +156,7 @@ export default class Annotation {
     this.start = start;
     this.end = end;
     this.share = share;
+    this.publicForShare = pubicForShare;
     this.reaction = reaction;
     this.metadata = metadata;
     this.loading = loading;

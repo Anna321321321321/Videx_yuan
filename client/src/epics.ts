@@ -32,5 +32,6 @@ export default combineEpics(
   AnnotationsStore.epics.removeEpic,
   AnnotationsStore.epics.likeEpic,
   AnnotationsStore.epics.unlikeEpic,
-  AnnotationsStore.epics.shareEpic
+  AnnotationsStore.epics.shareEpic,
+  AnnotationsStore.epics.fetchShareEpic
 );

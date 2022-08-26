@@ -9,6 +9,7 @@ export type IAnnotationSchema = mongoose.Document & {
   start: number;
   end: number;
   share: boolean;
+  publicForShare: boolean;
   editedAt: Date;
 };
 
@@ -49,5 +50,10 @@ export default new mongoose.Schema({
   editedAt: {
     type: Date,
     required: true
+  },
+  publicForShare: {
+    type: Boolean,
+    required: true,
+    default: true
   }
 });

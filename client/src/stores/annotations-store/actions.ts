@@ -2,12 +2,23 @@ import Annotation from './Annotation';
 import * as actionTypes from './actionTypes';
 import * as Logger from 'videx/client/logger';
 
-export const fetch = annotations => ({
+export const fetch = (annotations) => ({
   payload: { annotations },
-  type: actionTypes.FETCH
+  type: actionTypes.FETCH,
 });
 
 export const deinit = () => ({ type: actionTypes.DEINIT });
+
+/*
+export const initShare = (link: string) => dispatch => APICaller.get();
+ {
+ const _annotations = ;
+ return {
+ payload: { annotations },
+ type: actionTypes.INITSHARE, 
+};
+};
+*/
 
 export const add = (annotation: Annotation) => {
   return { payload: { annotation }, type: actionTypes.ADD };
@@ -20,7 +31,7 @@ export const added = (annotation: Annotation) => {
     annotationColor: annotationObject.color,
     annotationStart: annotationObject.start,
     annotationEnd: annotationObject.end,
-    annotationTranscript: annotationObject.transcript
+    annotationTranscript: annotationObject.transcript,
   });
   return { payload: { annotation }, type: actionTypes.ADDED };
 };
@@ -39,13 +50,15 @@ export const update = (
     text?: string;
     color?: string;
     share?: boolean;
+    publicForShare?: boolean;
   }
 ) => {
   Logger.event('Annotation.Update', {
     annotationId: id,
     annotationText: data.text,
     annotationColor: data.color,
-    annotationShare: data.share
+    annotationShare: data.share,
+    annotationPublicForShare: data.publicForShare,
   });
   return { payload: { id, data }, type: actionTypes.UPDATE };
 };
@@ -55,6 +68,7 @@ export const updated = (
     text?: string;
     color?: string;
     share?: boolean;
+    annotationPublicForShare: boolean;
   }
 ) => {
   return { payload: { id, data }, type: actionTypes.UPDATED };
@@ -84,15 +98,31 @@ export const share = (
   Logger.event('Annotation.ShareInterval', {
     start: data.start,
     end: data.end,
-    source: data.source
+    source: data.source,
   });
   return { payload: { id, data }, type: actionTypes.SHARE };
 };
+
 export const shared = (id: string, data: { token }) => {
   return { payload: { id, data }, type: actionTypes.SHARED };
 };
+export const sharedAnnotation = (id: string, data: { token }) => {
+  return { payload: { id, data }, type: actionTypes.SHAREDANNOTATION };
+};
 
-export const select = source => {
+export const ableSelectPrivate = () => {
+  Logger.event('ableSelectPrivate');
+  return { type: actionTypes.ABLESELECTPRIVATEANNOTATION };
+};
+export const disableSelectPrivate = () => {
+  Logger.event('disableSelectPrivate');
+  return { type: actionTypes.DISABLESELECTPRIVATEANNOTATION };
+};
+/*export const selectPrivate = () => {
+  Logger.event('ableSelectPrivate');
+  return { type: actionTypes.SELECTPRIVATEANNOTATION };
+};*/
+export const select = (source) => {
   return { type: actionTypes.SELECT, payload: { source } };
 };
 export const deselect = () => ({ type: actionTypes.DESELECT });

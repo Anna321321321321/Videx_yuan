@@ -19,6 +19,13 @@ export const UNLIKED = `${constants.NAME}/UNLIKED`;
 
 export const SHARE = `${constants.NAME}/SHARE`;
 export const SHARED = `${constants.NAME}/SHARED`;
+export const INITSHARE = `${constants.NAME}/INITSHARE`;
+export const SHAREANNOTATION = `${constants.NAME}/SHAREANNOTATION`;
+export const SHAREDANNOTATION = `${constants.NAME}/SHAREDANNOTATION`;
+
+export const ABLESELECTPRIVATEANNOTATION = `${constants.NAME}/ABLESELECTPRIVATEANNOTATION`;
+export const DISABLESELECTPRIVATEANNOTATION = `${constants.NAME}/DISABLESELECTPRIVATEANNOTATION`;
+//export const SELECTPRIVATEANNOTATION = `${constants.NAME}/SELECTPRIVATEANNOTATION`;
 
 export const SELECT = `${constants.NAME}/SELECT`;
 export const DESELECT = `${constants.NAME}/DESELECT`;

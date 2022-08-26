@@ -56,12 +56,17 @@ export default (props: ActiveVideoContainerProps) => {
         pauseVideo={props.pauseVideo}
         userType={props.userType}
       />
+      <FRE
+        isEnabled={props.isFREEnabled}
+        onPause={props.pauseFRE}
+        onStop={props.disableFRE}
+      />
       <ReflexContainer orientation="vertical">
         <ReflexElement
           flex={props.layoutFlexs.player}
           name="player"
           className="videx-video-player"
-          onResize={_.debounce(event => props.onResize(event), 400)}
+          onResize={_.debounce((event) => props.onResize(event), 400)}
         >
           <VideoPlayerContainer />
         </ReflexElement>
@@ -70,7 +75,7 @@ export default (props: ActiveVideoContainerProps) => {
           flex={props.layoutFlexs.transcript}
           className="videx-transcript"
           name="transcript"
-          onResize={_.debounce(event => props.onResize(event), 400)}
+          onResize={_.debounce((event) => props.onResize(event), 400)}
         >
           <TranscriptContainer />
         </ReflexElement>

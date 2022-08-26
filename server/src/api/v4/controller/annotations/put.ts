@@ -18,6 +18,9 @@ export default async (req, res, next) => {
         case 'share':
           await annotation.setShare(req.body[property]);
           break;
+        case 'publicForShare':
+          await annotation.setPublicForShare(req.body[property]);
+          break;
       }
     }
     res.status(200);

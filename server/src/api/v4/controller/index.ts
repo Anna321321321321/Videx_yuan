@@ -11,6 +11,7 @@ import * as links from './links';
 import * as playlist from './playlist';
 import * as reactions from './reactions';
 import * as users from './users';
+import * as share from './share';
 
 export {
   flights,
@@ -25,5 +26,6 @@ export {
   courses,
   dashboard,
   consent,
-  playlist
+  playlist,
+  share,
 };

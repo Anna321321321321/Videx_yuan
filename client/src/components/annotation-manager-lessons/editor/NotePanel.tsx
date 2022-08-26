@@ -14,6 +14,7 @@ interface NotePanelProps {
   annotation: {
     text: string;
     share: boolean;
+    publicForShare: boolean;
     color: string;
     loading: boolean;
     lessonId: string;

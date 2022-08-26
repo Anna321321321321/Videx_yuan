@@ -37,6 +37,11 @@ export const annotationSchema = new mongoose.Schema({
   editedAt: {
     type: Date,
     required: true
+  },
+  publicForShare: {
+    type: Boolean,
+    required: true,
+    default: true,
   }
 });
 

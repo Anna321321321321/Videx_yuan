@@ -16,6 +16,7 @@ interface AnnotationManagerSegmentProps {
     id: string;
     text: string;
     share: boolean;
+    publicForShare: boolean;
     color: TColorHex;
     loading: boolean;
     start: number;

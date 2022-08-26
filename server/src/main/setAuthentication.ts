@@ -6,7 +6,7 @@ export default (app, passport) => {
   app.get('/auth/oauth2/login', cors, (req, res, next) => {
     passport.authenticate('msft', {
       response: res,
-      failureRedirect: '/',
+      failureRedirect: '/'
     })(req, res, next);
   });
 
@@ -16,7 +16,7 @@ export default (app, passport) => {
     (req, res, next) => {
       passport.authenticate('msft', {
         response: res,
-        failureRedirect: '/',
+        failureRedirect: '/'
       })(req, res, next);
     },
     (req: any, res, next) => {
@@ -27,7 +27,7 @@ export default (app, passport) => {
 
   // 'logout' route, logout from passport, and destroy the session with AAD.
   app.get('/logout', cors, (req: any, res) => {
-    req.session.destroy((err) => {
+    req.session.destroy(err => {
       const redirectUrl = `${req.protocol}://${req.get('host')}`;
       req.logout();
       // The url you need to go to destroy the session with AAD

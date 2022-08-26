@@ -4,7 +4,8 @@ import {
   compose,
   lifecycle,
   mapProps,
-  renderComponent
+  renderComponent,
+  withState
 } from 'recompose';
 import * as Logger from 'videx/client/logger';
 import SpinPage from '../../components/spin-page';
@@ -30,6 +31,7 @@ export default compose(
       setPlaylists: ActiveVideoStore.actions.setPlaylists
     }
   ),
+  withState('sharedAnnotations','getSharedAnnotations',false),
   lifecycle({
     componentDidMount() {
       Logger.event('ActiveVideo.Load', {

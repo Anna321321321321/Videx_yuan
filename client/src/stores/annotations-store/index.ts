@@ -7,7 +7,11 @@ import {
   select,
   share,
   unlike,
-  update
+  update,
+  ableSelectPrivate,
+  disableSelectPrivate,
+  sharedAnnotation,
+  // initShare,
 } from './actions';
 import * as constants from './constants';
 import * as epics from './epics';
@@ -22,7 +26,11 @@ const actions = {
   update,
   unlike,
   like,
-  share
+  share,
+  ableSelectPrivate,
+  disableSelectPrivate,
+  sharedAnnotation,
+  // initShare,
 };
 
 export { actions, constants, reducer, selectors, epics, Annotation };

@@ -6,6 +6,7 @@ export default interface IAnnotation {
   setColor(color: string): Promise<void>;
   setText(text: string): Promise<void>;
   setShare(share: boolean): Promise<void>;
+  setPublicForShare(publicForShare: boolean): Promise<void>;
   toObject(): {
     id: string;
     color: string;
@@ -13,6 +14,7 @@ export default interface IAnnotation {
     start: number;
     end: number;
     share: boolean;
+    publicForShare: boolean;
     editedAt: Date;
   };
 }

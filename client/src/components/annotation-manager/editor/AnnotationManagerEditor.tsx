@@ -4,7 +4,7 @@ import {
   mapProps,
   branch,
   renderComponent,
-  onlyUpdateForKeys
+  onlyUpdateForKeys,
 } from 'recompose';
 import { connect } from 'react-redux';
 import * as AnnotationsStore from '../../../stores/annotations-store';
@@ -26,6 +26,7 @@ interface AnnotationsEditContainerProps {
     id: string;
     text: string;
     share: boolean;
+    publicForShare: boolean;
     color: TColorHex;
     loading: boolean;
     start: number;
@@ -58,7 +59,7 @@ const actions = {
   onMouseLeaveAnnotation: AnnotationsStore.actions.deselect,
   actionLike: AnnotationsStore.actions.like,
   actionUnlike: AnnotationsStore.actions.unlike,
-  playAnnotation: VideoPlayerStore.actions.playAnnotations
+  playAnnotation: VideoPlayerStore.actions.playAnnotations,
 };
 
 const enhance = compose(
@@ -71,11 +72,8 @@ const enhance = compose(
     },
     {}
   ),
-  branch(props => !props.annotation, renderComponent(Spin)),
-  connect(
-    () => ({}),
-    actions
-  )
+  branch((props) => !props.annotation, renderComponent(Spin)),
+  connect(() => ({}), actions)
 );
 
 // TODO branch for two components
@@ -86,7 +84,7 @@ export default enhance((props: AnnotationsEditContainerProps) => {
     origin,
     onMouseEnterAnnotation,
     onMouseLeaveAnnotation,
-    annotation
+    annotation,
   } = props;
 
   return (
@@ -94,78 +92,75 @@ export default enhance((props: AnnotationsEditContainerProps) => {
       style={{
         position: 'relative',
         width: '100%',
-        zIndex: 99
+        zIndex: 99,
       }}
     >
-      {annotation.metadata.editable && (
-        <Fragment>
-          <span className="videx-grid" style={{ background: 'transparent' }}>
-            <HighlightPanel updateAnnotation={update} annotation={annotation} />
-            <ErasePanel
-              annotation={annotation}
-              delete={props.delete}
-              onClickHandle={props.onClickHandle}
-            />
-          </span>
-          {origin === 'icon' && (
-            <Fragment>
-              <div
-                onMouseEnter={onMouseEnterAnnotation}
-                onMouseLeave={onMouseLeaveAnnotation}
-                style={{ paddingTop: '5px' }}
-              >
-                <NotePanel
-                  updateAnnotation={update}
-                  annotation={annotation}
-                  visible={props.visible}
-                />
-              </div>
-            </Fragment>
-          )}
-        </Fragment>
-      )}
-      {!annotation.metadata.editable && (
-        <div className="videx-grid">
-          <div>
-            <Icon
-              onClick={() => {
-                props.playAnnotation([annotation]);
-              }}
-              name="play"
-              size="large"
-              className="videx-hover"
-            />
-          </div>
-          {annotation.reaction.likeable ? (
-            <Icon
-              name="thumbs up outline"
-              size="large"
-              className="videx-hover"
-              style={{
-                color: annotation.color === null ? 'grey' : annotation.color
-              }}
-              onClick={() => props.actionLike(annotation.id)}
-            />
-          ) : (
-            <Icon
-              name="thumbs up"
-              size="large"
-              className="videx-hover"
-              style={{
-                color: annotation.color === null ? 'grey' : annotation.color
-              }}
-              onClick={() => props.actionUnlike(annotation.id)}
-            />
-          )}
-          <p
-            style={{
-              color: annotation.color === null ? 'grey' : annotation.color
+      <Fragment>
+        <span className="videx-grid" style={{ background: 'transparent' }}>
+          <HighlightPanel updateAnnotation={update} annotation={annotation} />
+          <ErasePanel
+            annotation={annotation}
+            delete={props.delete}
+            onClickHandle={props.onClickHandle}
+          />
+        </span>
+        {origin === 'icon' && (
+          <Fragment>
+            <div
+              onMouseEnter={onMouseEnterAnnotation}
+              onMouseLeave={onMouseLeaveAnnotation}
+              style={{ paddingTop: '5px' }}
+            >
+              <NotePanel
+                updateAnnotation={update}
+                annotation={annotation}
+                visible={props.visible}
+              />
+            </div>
+          </Fragment>
+        )}
+      </Fragment>
+
+      <div className="videx-grid">
+        <div>
+          <Icon
+            onClick={() => {
+              props.playAnnotation([annotation]);
             }}
-          >
-            {annotation.reaction.counter}
-          </p>
+            name="play"
+            size="large"
+            className="videx-hover"
+          />
         </div>
-      )}
+        {annotation.reaction.likeable ? (
+          <Icon
+            name="thumbs up outline"
+            size="large"
+            className="videx-hover"
+            style={{
+              color: annotation.color === null ? 'grey' : annotation.color,
+            }}
+            onClick={() => props.actionLike(annotation.id)}
+          />
+        ) : (
+          <Icon
+            name="thumbs up"
+            size="large"
+            className="videx-hover"
+            style={{
+              color: annotation.color === null ? 'grey' : annotation.color,
+            }}
+            onClick={() => props.actionUnlike(annotation.id)}
+          />
+        )}
+        <p
+          style={{
+            color: annotation.color === null ? 'grey' : annotation.color,
+          }}
+        >
+          {annotation.reaction.counter}
+        </p>
+      </div>
     </div>
   );
 });

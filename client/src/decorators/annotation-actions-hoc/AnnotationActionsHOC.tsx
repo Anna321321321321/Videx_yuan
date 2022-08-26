@@ -49,6 +49,13 @@ export default compose(
         props.actionUpdate(props.annotation.id, { share: true });
       }
     },
+    onTogglePublicForShare: props => () => {
+      if (props.annotation.publicForShare==false) {
+        props.actionUpdate(props.annotation.id, { publicForShare: false });
+      } else {
+        props.actionUpdate(props.annotation.id, { publicForShare: true });
+      }
+    },
     onUpdateColor: props => color => {
       props.actionUpdate(props.annotation.id, {
         color: color === '#ffffff' ? null : color

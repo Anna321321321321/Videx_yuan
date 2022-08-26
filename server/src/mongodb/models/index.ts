@@ -9,6 +9,7 @@ import LinkSchema, { ILinkSchema } from './LinkSchema';
 import ReactionSchema, { IReactionSchema } from './ReactionSchema';
 import UserSchema, { IUserSchema, SchoolList, UserType } from './UserSchema';
 import PlaylistSchema, { IPlaylistSchema } from './PlaylistSchema';
+import ShareSchema, { IShareSchema } from './ShareSchema';
 
 export {
   ConsentSchema,
@@ -35,5 +36,7 @@ export {
   ReactionSchema,
   IReactionSchema,
   PlaylistSchema,
-  IPlaylistSchema
+  IPlaylistSchema,
+  ShareSchema,
+  IShareSchema,
 };

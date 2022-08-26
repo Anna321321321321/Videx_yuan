@@ -5,7 +5,8 @@ import { AnnotationManagerSegment } from '../../components/annotation-manager';
 import { compose, withState, onlyUpdateForKeys } from 'recompose';
 import * as Logger from 'videx/client/logger';
 import ExportContainer from '../export-container';
-
+import ShareAnnotationContainer from '../share-annotation-container';
+import DoneButtonContainer from '../done-button-annotation-manager-container';
 // Look through this for front end AM
 
 interface AnnotationsContainerProps {
@@ -28,7 +29,7 @@ const enhance = compose(
     'transcripts',
     'annotations',
     'thumbnail',
-    'visible'
+    'visible',
   ])
 );
 
@@ -40,6 +41,14 @@ export default enhance((props: AnnotationsContainerProps) => {
       return item.toObject();
     });
     annotation = _.sortBy(annotation, 'end');
+  }
+  function onChange(e) {
+    console.log(`checked = ${e.target.checked}`);
+    // if(e.target.checked){
+    //   mongodb.(true);
+    // }
+    // else
+    //   mongodb.();
   }
   return (
     <Fragment>
@@ -58,7 +67,25 @@ export default enhance((props: AnnotationsContainerProps) => {
         <Drawer
           title={
             <span>
-              Annotations Manager &nbsp; &nbsp; <ExportContainer />
+                <table>
+                  <tr>
+                    <td>
+                    Annotations Manager
+                    </td>
+                    <td width="30"></td>
+                  <td>
+                  <ShareAnnotationContainer /> 
+                  </td>
+                  <td width="30"></td>
+                  <td>
+                  <ExportContainer />
+                  </td>
+                  <td width="700"></td>
+                  <td>
+                  <DoneButtonContainer />
+                  </td>
+                  </tr>                
+                </table> 
             </span>
           }
           placement="top"
@@ -72,7 +99,7 @@ export default enhance((props: AnnotationsContainerProps) => {
           style={{
             overflow: 'auto',
             overflowY: 'auto',
-            height: '80vh'
+            height: '80vh',
           }}
         >
           <div className="videx-vertical-scroll">

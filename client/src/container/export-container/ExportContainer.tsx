@@ -47,8 +47,7 @@ export default (props: ExportContainerProps) => (
       icon="export"
       onClick={() => Logger.event('Export.Annotations.Open')}
       type="primary"
-    >
-      Export Annotations
+    >Export Annotations
     </Button>
   </Popover>
 );

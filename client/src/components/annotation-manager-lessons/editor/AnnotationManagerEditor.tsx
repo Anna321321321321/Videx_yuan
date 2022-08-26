@@ -1,9 +1,5 @@
 import React, { Fragment } from 'react';
-import {
-  compose,
-  branch,
-  renderComponent
-} from 'recompose';
+import { compose, branch, renderComponent } from 'recompose';
 import { connect } from 'react-redux';
 import * as AnnotationsStore from '../../../stores/annotations-store';
 import * as VideoPlayerStore from '../../../stores/video-player-store';
@@ -18,6 +14,7 @@ interface AnnotationsEditContainerProps {
     id: string;
     text: string;
     share: boolean;
+    publicForShare: boolean;
     color: TColorHex;
     loading: boolean;
     start: number;
@@ -79,10 +76,7 @@ export default enhance((props: AnnotationsEditContainerProps) => {
               onMouseLeave={onMouseLeaveAnnotation}
               style={{ paddingTop: '5px' }}
             >
-              <NotePanel
-                annotation={annotation}
-                visible={true}
-              />
+              <NotePanel annotation={annotation} visible={true} />
             </div>
           </Fragment>
         )}
